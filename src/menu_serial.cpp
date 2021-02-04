@@ -125,6 +125,55 @@ void adriToolsv2_serialRead::loop(){
         
     }       
 }
+void adriToolsv2_serialRead::read(String a){
+
+    // if(Serial.available()) { 
+        boolean next = true;
+
+        // String a = Serial.readStringUntil('\n');
+
+        String cmd = "";
+        String value = "";  
+        static String lastMsg = "";
+
+        if (a.indexOf("^")>=0)a=lastMsg;
+        lastMsg = a;
+
+        if (a.indexOf("!")>=0){
+            splitText(a, "!", cmd,  value) ; 
+            for (int i = 0; i < _cmd_2_cnt; ++i) {
+                if (cmd == _cmd_2_Array[i]._key) {
+                    _cmd_2_Array[i]._function(cmd, value);
+                    break;
+                }
+            } 
+            next = false;       
+        }       
+        if (!next) return;
+        if (_cmd_3_sep != (char *)"") {
+            if (a.indexOf(_cmd_3_sep)>=0) {
+                 splitText(a, _cmd_3_sep, cmd,  value) ; 
+                _cmd_3(cmd, value);
+                return;
+            }   
+        }   
+        if (_cmd_4_sep != (char *)"") {
+            if (a.indexOf(_cmd_4_sep)>=0) {
+                 splitText(a, _cmd_4_sep, cmd,  value) ; 
+                _cmd_4(cmd, value);
+                return;
+            }                            
+        } 
+        if (next) {
+            for (int i = 0; i < _cmd_1_cnt; ++i) {
+                if (a.indexOf(_cmd_1_Array[i]._key)>=0 ) {
+                    _cmd_1_Array[i]._function("", "");
+                }
+            }                        
+        }        
+        
+    // }       
+}
 int adriToolsv2_serialRead::splitText(String A_readString, const char* sep, String & cmd, String & value) {
 
     String  s_command;

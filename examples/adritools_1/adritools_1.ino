@@ -1,7 +1,31 @@
 #include <Arduino.h>
+
+	#define ADRIOTOOLS_USETELNET
+
 #include <adri_tools_v2.h>
 
 
+#ifdef ADRIOTOOLS_USETELNET
+	adri_telnet * _adri_telnet;
+
+	#include <adri_wifiConnect.h>
+	#include "secret.h"
+	wifiConnect 		* myWifi;	// PTR pour unr instance statique "wifiConnect"
+	wifi_credential_ap	* myWifiAp;	// PTR pour unr instance statique "wifi_credential_ap"
+
+	const char 			* myWifiHostname = "MY_WIFI"; 	// AP AND DNS HOSTNAME 
+														
+											// 	AWC_LOOP; 		WIFI CONNECT STARTUP WITH STATIC 
+											// 	AWC_SETUP; 		WIFI CONNECT STARTUP WITH STATIC 
+	WIFICONNECT_MOD		myWifiConnectMod 	= 	AWC_SETUP;	
+
+											// 	AWCS_MULTI;		STA CONNECT WITH MULTIPLE SSID
+											// 	AWCS_NORMAL;	STA CONNECT WITH THE SELECTED SSID
+	WIFICONNECTSSID_MOD myWifiSSIDMod 		= 	AWCS_NORMAL;	
+
+	boolean 			myWifiOTA 			= false; 	// ENABLED OTA
+
+#endif
 adri_toolsV2 			* _tools;
 adriToolsv2_serialRead 	* _serial;
 adriTools_logger 		* _looger;
@@ -36,6 +60,54 @@ void setup()
 	_tools = new adri_toolsV2();
   	_tools->heap_print();
 
+	#ifdef ADRIOTOOLS_USETELNET
+
+// region ################################################ WIFICONNECT
+		myWifi 		= new wifiConnect();
+		myWifiAp 	= new wifi_credential_ap("");
+		myWifiAp->hostname_set(adri_toolsv2Ptr_get()->ch_toString(myWifiHostname));
+		wifi_credential_ap_register(myWifiAp);
+		wifi_credential_sta_fromSPIFF();
+		wifi_credential_set(
+			0, 						// postion du ssid selectionner (0 to 2)
+			SECRET_SSID,			// ssid
+			SECRET_PASS, 			// pswd
+			"",						// ip 		(vide pour ne pas cofigurer d'ip)
+			"",						// subnet 	(vide pour ne pas cofigurer d'subnet)
+			""						// gateway 	(vide pour ne pas cofigurer d'gateway)
+		);
+		wifi_credential_sta_toSpiff();	
+		wifi_credential_sta_print();
+		myWifi->load_fromSpiif 				();
+		myWifi->credential_sta_pos_set 		(0);
+		myWifi->connect_set 				(myWifiConnectMod);
+		if (myWifiConnectMod == AWC_LOOP) myWifiSSIDMod = AWCS_NORMAL; 	// wifi connect loop ne supporte pas encor de multiple ssid
+		myWifi->connectSSID_set 			(myWifiSSIDMod);
+		myWifi->station_set 				(WIFI_STA);
+		myWifi->hostName_set 				(myWifiHostname); 			// initialisation dns si ota desactiver
+		myWifi->setup_id					();							// initialize les id STA
+		//
+		myWifiAp->psk_set 					("mywifiappsk");						// pswd AP
+		myWifiAp->ip_set 					(myWifi->_credential_sta->ip_get());	// ip 	AP
+		myWifiAp->print 					();	
+		if (myWifiConnectMod == AWC_SETUP) {
+			myWifi->setup 						();
+			if(!myWifiOTA) 	myWifi->MDSN_begin	();
+			// else 			arduinoOTA_setup	(myWifiHostname);
+			wifi_connect_statu 					();
+			fsprintf("\n[myWifiConnectDone] : %s\n", adri_toolsv2Ptr_get()->on_time().c_str());
+		}	
+// endregion >>>> WIFICONNECT
+
+		_adri_telnet = new adri_telnet();
+		_tools->_telnetSetup 	= _adri_telnet->telnet_setup;
+		_tools->_telnetLoop 	= _adri_telnet->telnet_loop;
+		_tools->_telnetPut 		= _adri_telnet->telnet_put;
+		_tools->_telnetGet 		= _adri_telnet->telnet_get;
+
+		_tools->_telnetSetup ();
+	#endif
+
 	_looger = new adriTools_logger();
 	_looger->activateByVariable_add("example"); // exxemple for _serial_value
 
@@ -60,18 +132,10 @@ void setup()
 // region ################################################ FSPRINTF
 // SERIAL PRINT W PROGMEM AND DEBGUGTRACE
 // 	
-	adri_toolsv2_trace = true; 	// active arduintrace into fsprintf
-
 	fsprintf("\n[LINE 1]\n"); 	// serial print with progmem
 	fsprintf("\n[LINE 2]\n");
-
-	adri_toolsv2_trace = false;
 // endregion >>>> FSPRINTF
 	
-
-	ARDUINOTRACE_TRACEF(); 	// inserer une trace "return as arduinotrace_extern_string" @ line 50 
-
-
 // region ################################################ ADRILOG
 // AJOUTER DES LOG DANS UN FICHIER TXT
 // 
@@ -126,6 +190,9 @@ void loop()
 {
 	_serial->loop();
 	_tools->loop();
+		#ifdef ADRIOTOOLS_USETELNET
+		myWifi->wifi_loop();	
+		#endif	
 }
 
 

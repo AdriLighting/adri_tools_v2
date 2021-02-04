@@ -5,11 +5,12 @@
 
 	extern String ARDUINOTRACE_EXTERN_STRING;
 
-	extern char ARDUINOTRACE_LINE[];
-	extern char ARDUINOTRACE_FUNC[];
-	extern char ARDUINOTRACE_VAR[];
+	extern String ARDUINOTRACE_LINE;
+	extern String ARDUINOTRACE_FUNC;
+	extern String ARDUINOTRACE_VAR;
 
 	extern char adriTools_PrBuffer[];
+	extern const char PROGMEM adriTools_ch_cr[] ;
 
 	#include "ArduinoTrace.h"
 
@@ -35,36 +36,40 @@
 
 		extern boolean adri_toolsv2_trace;
 
-		#define fsprintf(parm_a, ...) 			{sprintf_P(adriTools_PrBuffer, (PGM_P)PSTR(parm_a), ##__VA_ARGS__); adriTools_print(String(adriTools_PrBuffer));if(adri_toolsv2_trace){ARDUINOTRACE_TRACEF();adriTools_print(ARDUINOTRACE_EXTERN_STRING);adriTools_printLn("");}}
+		#define fsprintf(parm_a, ...) 			{sprintf_P(adriTools_PrBuffer, (PGM_P)PSTR(parm_a), ##__VA_ARGS__); adriTools_print(String(adriTools_PrBuffer));}
 		#define fsprintfv(parm_b, parm_a, ...) 	{sprintf_P(adriTools_PrBuffer, (PGM_P)PSTR(parm_a), ##__VA_ARGS__); adriTools_print(String(adriTools_PrBuffer));if(adri_toolsv2_trace){ARDUINOTRACE_TRACEF();adriTools_print(ARDUINOTRACE_EXTERN_STRING+"\n");ARDUINOTRACE_DUMP(parm_b);}}
 		#define fsprintfs(parm_a) 				{sprintf_P(adriTools_PrBuffer, PSTR(parm_a)); adriTools_print(String(adriTools_PrBuffer));}
 		#define fssprintf(parm_b, parm_a,...) 	sprintf_P(parm_b, PSTR(parm_a), __VA_ARGS__)
 	#endif
 
 
-	#define ADRITOOLS_LOGP_LVL_LINE		0
-	#define ADRITOOLS_LOGP_LVL_LINEFUNC	1
-	#define ADRITOOLS_LOGP_LVL_VAR		2
-	#define ADRITOOLS_LOGP_LVL_ALL 		3
 
-	void esp_log_printf_(int actf, int lvl, int mod, const char *line, const char *func, const char *var, const char *tag);
-	void esp_log_printf_(int actf, int lvl, int mod, const char *line, const char *func, const char *tag);
+	void esp_log_printf_(int actf, int lvl, int mod, String line, String func, String var, const char *tag);
+	void esp_log_printf_(int actf, int lvl, int mod, String line, String func, const char *tag);
+	void esp_log_printf_(boolean addLine, int actf, int lvl, int mod, String line, String func, const char *tag);
 
-	#define adri_log_v(parm_e, parm_d, parm_c, parm_b, parm_a, ...) 							\
+	#define adri_log_v(parm_e, parm_d, parm_c, parm_b, parm_a, ...)						\
 		ARDUINOTRACE_TRACEL()															\
 		ARDUINOTRACE_TRACEF()															\
 		ARDUINOTRACE_DUMPL(parm_b)														\
 		sprintf_P(adriTools_PrBuffer, (PGM_P)PSTR(parm_a), ##__VA_ARGS__) ;				\
 	  	esp_log_printf_(parm_e, parm_d, parm_c, ARDUINOTRACE_LINE, ARDUINOTRACE_FUNC, ARDUINOTRACE_VAR, adriTools_PrBuffer) 
 
-	#define adri_log_(parm_d, parm_c, parm_b, parm_a, ...) 										\
+	#define adri_log_(parm_d, parm_c, parm_b, parm_a, ...)								\
 		ARDUINOTRACE_TRACEL()															\
 		ARDUINOTRACE_TRACEF()															\
 		sprintf_P(adriTools_PrBuffer, (PGM_P)PSTR(parm_a), ##__VA_ARGS__) ;				\
 	  	esp_log_printf_(parm_d, parm_c, parm_b, ARDUINOTRACE_LINE, ARDUINOTRACE_FUNC, adriTools_PrBuffer) 
 
+	#define adri_log_f(parm_e, parm_d, parm_c, parm_b, parm_a, ...)								\
+		ARDUINOTRACE_TRACEL()															\
+		ARDUINOTRACE_TRACEF()															\
+		sprintf_P(adriTools_PrBuffer, (PGM_P)PSTR(parm_a), ##__VA_ARGS__) ;				\
+	  	esp_log_printf_(parm_e, parm_d, parm_c, parm_b, ARDUINOTRACE_LINE, ARDUINOTRACE_FUNC, adriTools_PrBuffer) 
+
 	#define ADRI_LOGV(parm_e, parm_d, parm_c, parm_b, parm_a, ...) adri_log_v(parm_e, parm_d, parm_c, parm_b, parm_a, __VA_ARGS__)
 	#define ADRI_LOG(parm_d, parm_c, parm_b, parm_a, ...) adri_log_(parm_d, parm_c, parm_b, parm_a, __VA_ARGS__)
+	#define ADRI_LOGP(parm_e, parm_d, parm_c, parm_b, parm_a, ...) adri_log_f(parm_e, parm_d, parm_c, parm_b, parm_a, __VA_ARGS__)
 
 
 	struct boot_flags {
@@ -80,10 +85,16 @@
 	    unsigned char bootdevice_flash : 1;
 	};
 
-
+	typedef void (*_telnet_setup)();  
+	typedef void (*_telnet_loop)();  
+	typedef void (*_telnet_put)(String output_string);  
+	typedef boolean (*_telnet_get)(String & input_string);  
 	class adri_toolsV2
 	{
 	private:
+
+
+
 		String log_filePath = "/log.txt";
 
 
@@ -98,6 +109,13 @@
 		String boot_device(boot_flags flags);	
 		String reset_cause(struct boot_flags flags);
 	public:
+		// #ifdef ADRIOTOOLS_USETELNET
+		// #endif
+		_telnet_setup 	_telnetSetup 	= NULL;
+		_telnet_loop 	_telnetLoop 	= NULL;
+		_telnet_put 	_telnetPut 		= NULL;
+		_telnet_get 	_telnetGet 		= NULL;
+
 		String 	* tempStrArray 		= nullptr;
 		int 	tempStrArraySize 	= -1;
 
@@ -148,5 +166,6 @@
 		void loop();
 	};
 	adri_toolsV2 * adri_toolsv2Ptr_get();
+
 
 #endif // CORE_H

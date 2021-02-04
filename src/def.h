@@ -1,0 +1,4 @@
+
+#ifdef ADRIOTOOLSUSETELNET
+	#define ADRIOTOOLSUSE_TELNET
+#endif

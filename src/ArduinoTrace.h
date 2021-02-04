@@ -145,8 +145,10 @@ struct PrinterL {
     String s="";
     s+= make_string<TFilename>{}.data();
     s+= make_string<TPrefix>{}.data();
-    sprintf_P(ARDUINOTRACE_LINE, s.c_str());
-    sprintf_P(ARDUINOTRACE_FUNC, String(content).c_str());
+    ARDUINOTRACE_LINE = s;
+    ARDUINOTRACE_FUNC = content;
+    // sprintf_P(ARDUINOTRACE_LINE, s.c_str());
+    // sprintf_P(ARDUINOTRACE_FUNC, String(content).c_str());
   }
 };
 
@@ -157,7 +159,8 @@ struct PrinterD {
     String s="";
     s+= make_string<TPrefix>{}.data();
     s+= content;
-    sprintf_P(ARDUINOTRACE_VAR, s.c_str());
+    ARDUINOTRACE_VAR = s;
+    // sprintf_P(ARDUINOTRACE_VAR, s.c_str());
 
   }
 };

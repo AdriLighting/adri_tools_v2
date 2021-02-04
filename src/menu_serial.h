@@ -48,6 +48,7 @@
 		void cmd_3(char* sep, String desc, at_srFunc f);
 		void cmd_4(char* sep, String desc, at_srFunc f);
 
+		void read(String a);
 		void loop();
 		void menu();
 	};

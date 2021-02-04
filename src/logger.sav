@@ -250,35 +250,75 @@ void esp_log_print_lines(boolean addLine, int actif, int lvl, int mod, String pL
                     cr = "\n";
                 }
                 if (varP != "") {
-                    fssprintf(adriLogger_buffer1, "[%-97s][%-20s]%s%s\t[%s]", 
-                            pLine.c_str(), 
-                            varP.c_str(),
-                            title.c_str(), 
-                            cr.c_str(),
-                            pTag.c_str()
-                        );
+                    if (mod== 2) {
+                        fssprintf(adriLogger_buffer1, "[%-97s][%-20s]%s%s\t[%s]", 
+                                pLine.c_str(), 
+                                varP.c_str(),
+                                title.c_str(), 
+                                cr.c_str(),
+                                pTag.c_str()
+                            );
+                    } 
+                    if (mod== 1) {
+                        fssprintf(adriLogger_buffer1, "[%-30s][%-20s]%s%s\t[%s]", 
+                                pLine.c_str(), 
+                                varP.c_str(),
+                                title.c_str(), 
+                                cr.c_str(),
+                                pTag.c_str()
+                            );
+                    }
                 } else {
-                    fssprintf(adriLogger_buffer1, "[%-97s]%s%s\t[%s]", 
-                            pLine.c_str(), 
-                            title.c_str(), 
-                            cr.c_str(),
-                            pTag.c_str()
-                        );                    
+                    if (mod== 2) {
+                        fssprintf(adriLogger_buffer1, "[%-97s]%s%s\t[%s]", 
+                                pLine.c_str(), 
+                                title.c_str(), 
+                                cr.c_str(),
+                                pTag.c_str()
+                            );                    
+                    } 
+                    if (mod== 1) {
+                        fssprintf(adriLogger_buffer1, "[%-30s]%s%s\t[%s]", 
+                                pLine.c_str(), 
+                                title.c_str(), 
+                                cr.c_str(),
+                                pTag.c_str()
+                            );                    
+                    }                         
                 } 
             }  else {
                 if (varP != "") {
-                    fssprintf(adriLogger_buffer1, "[%-97s][%-20s]%s[%s]", 
-                            pLine.c_str(), 
-                            varP.c_str(),
-                            title.c_str(), 
-                            pTag.c_str()
-                        ); 
+                    if (mod== 2) {
+                        fssprintf(adriLogger_buffer1, "[%-97s][%-20s]%s[%s]", 
+                                pLine.c_str(), 
+                                varP.c_str(),
+                                title.c_str(), 
+                                pTag.c_str()
+                            ); 
+                    }
+                    if (mod== 1) {
+                        fssprintf(adriLogger_buffer1, "[%-30s][%-20s]%s[%s]", 
+                                pLine.c_str(), 
+                                varP.c_str(),
+                                title.c_str(), 
+                                pTag.c_str()
+                            ); 
+                    }                    
                 } else {
-                    fssprintf(adriLogger_buffer1, "[%-97s]%s[%s]", 
-                            pLine.c_str(), 
-                            title.c_str(), 
-                            pTag.c_str()
-                        ); 
+                    if (mod== 2) { 
+                        fssprintf(adriLogger_buffer1, "[%-97s]%s[%s]", 
+                                pLine.c_str(), 
+                                title.c_str(), 
+                                pTag.c_str()
+                            ); 
+                    }
+                    if (mod== 1) { 
+                        fssprintf(adriLogger_buffer1, "[%-30s]%s[%s]", 
+                                pLine.c_str(), 
+                                title.c_str(), 
+                                pTag.c_str()
+                            ); 
+                    }                    
                 }
             }
         } else {

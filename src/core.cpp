@@ -1,3 +1,4 @@
+        // #define fsprintf(parm_a, ...)           {sprintf_P(adriTools_PrBuffer, (PGM_P)PSTR(parm_a), ##__VA_ARGS__); adriTools_print(String(adriTools_PrBuffer));if(adri_toolsv2_trace){ARDUINOTRACE_TRACEF();adriTools_print(ARDUINOTRACE_EXTERN_STRING);adriTools_printLn("");}}
 
 #include "core.h"
 
@@ -7,19 +8,12 @@
 // ########################################################################################
 boolean adri_toolsv2_trace = false;
 String ARDUINOTRACE_EXTERN_STRING;
- char ARDUINOTRACE_LINE[80];
- char ARDUINOTRACE_FUNC[80];
- char ARDUINOTRACE_VAR[80];
+ String ARDUINOTRACE_LINE ;
+ String ARDUINOTRACE_FUNC ;
+ String ARDUINOTRACE_VAR  ;
 // endregion >>>> ARDUINOTRACE
 
-// region ################################################ FSPRINTF
-// ########################################################################################
-char adriTools_PrBuffer[300];
-
-void adriTools_print     (String buf) {Serial.print(buf);};
-void adriTools_printLn     (String buf) {Serial.println(buf);};   
-// endregion >>>> FSPRINTF
-
+const char PROGMEM adriTools_ch_cr[]  = "\n";
 
 // region ################################################ ADRI_TOOLSV2
 // ########################################################################################
@@ -36,9 +30,24 @@ adri_toolsV2::adri_toolsV2(){
 
 void adri_toolsV2::loop(){
     if (heap_monitor) heap_monitorLoop();
+    if (adri_toolsv2_ptr->_telnetLoop != NULL) adri_toolsv2_ptr->_telnetLoop ();
+
 }
 // endregion >>>> ADRI_TOOLSV2
-
+// 
+// region ################################################ FSPRINTF
+// ########################################################################################
+char adriTools_PrBuffer[1024];
+void adriTools_print (String buf) {
+    if (adri_toolsv2_ptr!=nullptr) {
+        if (adri_toolsv2_ptr->_telnetPut != NULL) {
+            adri_toolsv2_ptr->_telnetPut(buf);
+        }
+    }
+    Serial.print(buf);
+}
+void adriTools_printLn      (String buf) {Serial.println(buf);}
+// endregion >>>> FSPRINTF
 
 // region ################################################ LOG
 // ########################################################################################
@@ -131,9 +140,10 @@ void adri_toolsV2::tempStr_sizeSet(int size){
 // region ################################################ CHAR
 // ########################################################################################
 String adri_toolsV2::ch_toString(char * c){
-    char result[255];
-    fssprintf(result, "%s", c);
-    return String(result);
+    // char result[255];
+    // fssprintf(result, "%s", c);
+    String result((char*)c);
+    return result;
 }
 String adri_toolsV2::ch_toString(const char * c){
        return String((const __FlashStringHelper*) c);
@@ -463,3 +473,4 @@ void adri_toolsV2::heap_monitorToggle() {
 }
 // >>> HEAP    
 // endregion >>>> HEAP
+
