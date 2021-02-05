@@ -26,7 +26,7 @@
 
 
 	/**
-	* @class	adriTools_logger_variables
+	* @class	adriToolsLogger_region
 	*
 	* @brief    crée une region atribbuer a un ou plusieur "printf" ou "LITTLEFS"
 	* @see		https://github.com/AdriLighting/adri_tools_v2
@@ -34,7 +34,7 @@
 	* @author	adrilighting
 	* @date		05/02/2021 06:25:54
 	*/
-	class adriTools_logger_variables 
+	class adriToolsLogger_region 
 	{
 
 		public:
@@ -50,7 +50,7 @@
 			/** \brief nom d'affichage */
 			String 	_name 		= "0";
 
-			adriTools_logger_variables(String name);
+			adriToolsLogger_region(String name);
 
 			void toggle();
 			void toggleAddLine();
@@ -61,7 +61,7 @@
 	};
 
 	/**
-	* @class	adriTools_logger
+	* @class	adriToolsLogger
 	*
 	* @brief	fournit des fonctionnalités utiles pour déboguer les croquis via "printf" ou "LITTLEFS"
 	* @see		https://github.com/AdriLighting/adri_tools_v2
@@ -70,21 +70,21 @@
 	* @date		05/02/2021 06:25:54
 	*/
 
-	class adriTools_logger
+	class adriToolsLogger
 	{
-		/** \brief nbr de class "adriTools_logger_variables" ceer */
-		int 						_activateByVariable_cnt = 0;
-		/** \brief array cotenat les class "adriTools_logger_variables" */
-		adriTools_logger_variables 	* _activateByVariable[10];
+		/** \brief nbr de class "adriToolsLogger_region" ceer */
+		int _activateByRegion_cnt = 0;
+		/** \brief array cotenat les class "adriToolsLogger_region" */
+		adriToolsLogger_region 	* _activateByRegion[10];
 
 		/** \brief active/desactive le "printf" et "littfs" pour toute les region */
-		boolean printer_display			= true;
+		boolean printer_display = true;
 
 		/** \brief active  le "printf" et "littfs" uniquement pour le lvl selectionner pour toute les region */
-		int 	printer_display_lvl 	= 0;
+		int printer_displayMod_pos 	= 0;
 
 		/** \brief active/desactive par region < 0 le "printf"  */
-		boolean seriealPrint_otherRegion 	= true;
+		boolean seriealPrint_otherRegion = true;
 		/** \brief active/desactive par region < 0 le "littfs"  */
 		boolean spiff_addLine_otherRegion = true;
 
@@ -92,10 +92,10 @@
 		boolean spiff_sav = false;
 
 		/** \brief acitve/desactive le timestamp */
-		boolean printer_timestamp 	= true;
+		boolean printer_timestamp = true;
 
 		/** \brief activer/desactive le freeheap */
-		boolean printer_heap 		= true;		
+		boolean printer_heap = true;		
 
 		/** \brief enplacement du doosier des log situé da la mem SPIFF */
 		String spiff_folder = "/logger";
@@ -116,7 +116,6 @@
 
 		void printer_display_toggle();
 
-		void printer_display_lvl_set(int lvl);
 
 		void spiff_setup();
 
@@ -128,35 +127,37 @@
 
 		void spiff_addLine(String result);
 
-		void spiff_addLine_otherRegion_toggle();
+		void spiffAddLine_otherRegion_toggle();
 		void seriealPrint_otherRegion_toggle();
 
 		/**
 		 * @brief      constructor
 		 */
-		adriTools_logger();
-		~adriTools_logger(){};
+		adriToolsLogger();
+		~adriToolsLogger(){};
 
 
 		boolean printer_displayMod(int region, int lvl);
+		void printer_displayMod_set(int lvl);
+
 		String 	timeStamp();
 		int 	strContains(char str, const char *sfind);
 
 
-		void activateByVariable_print();
+		void activateByRegion_print();
 
-		void activateByVariable_add(String name);
+		void activateByRegion_add(String name);
 
-		void activateByVariable_toggle(int pos);
-		void activateByVariable_toggleAddLine(int pos);
-		void activateByVariable_toggleSerial(int pos);
+		void activateByRegion_toggle(int pos);
+		void activateByRegion_toggleAddLine(int pos);
+		void activateByRegion_toggleSerial(int pos);
 
-		boolean activateByVariable_stau(int pos);
-		boolean activateByVariable_statuAddLine(int pos);
-		boolean activateByVariable_statuSerialPrint(int pos);
+		boolean activateByRegion_stau(int pos);
+		boolean activateByRegion_statuAddLine(int pos);
+		boolean activateByRegion_statuSerialPrint(int pos);
 	};
 
-	adriTools_logger * adriTools_logger_ptrGet();
+	adriToolsLogger * adriToolsLogger_ptrGet();
 	String adriToolLogger_serialMenu_region(String cmd, String value);
 	String adriToolLogger_serialMenu_regionAddLine(String cmd, String value);
 	String adriToolLogger_serialMenu_regionSerialPrint(String cmd, String value);

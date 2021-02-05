@@ -11,61 +11,60 @@
                 region  lvl     trace   param   args
     ADRI_LOG(   parm_d, parm_c, parm_b, parm_a, ...)
 
-    region  : attribuer un seemble de ADRI_LOG a la meme region, et de pouvoir gerer indivuduelement avec la classe "adriTools_logger"
+    region  : attribuer un seemble de ADRI_LOG a la meme region, et de pouvoir gerer indivuduelement avec la classe "adriToolsLogger"
     lvl     : atribbuer un lvl associer a la position ou se trouve ADRI_LOG au sein de la fonction a debuger
     trace   : permet d'afficher la MACRO __LINE__ et ARDUINOTRACE_FUNCTION_NAME
     param   : "%s   - %d  - etcc"
     args    :  char - int - etcc
     
 
-    ADRI_LOG permet d"afficher avec Serial ou bien d'ecrire dans un fichier text
+    ADRI_LOG permet d"afficher avec Serial ou bien d'ecrire dans un fichier text manager avec adriToolsLogger
      
 
-    adriTools_logger
+    adriToolsLogger
 
     lvl
-        0 start
-        1 end
+        0 start     t
+        1 end       b
         2 random
     region
         -1 other region
         -2 dont print
-        >=0 region via "adriTools_logger_variables"
+        >=0 region via "adriToolsLogger_region"
 
         by mod 
             printer_displayMod_set
-                set mos via printer_displayMod_pos
-                    0   all
-                    1   all + only header bt       
-                    2   all + only header t       
-                    3   only region
-                    4   only region + only header bt
-                    5   only region + only header t
-                    6   no region
-                    7   no region + only header bt
-                    8   no region + only header t
-                    9   only bt
-                    10  only t  
+                0   all
+                1   all + only header bt       
+                2   all + only header t       
+                3   only region
+                4   only region + only header bt
+                5   only region + only header t
+                6   no region
+                7   no region + only header bt
+                8   no region + only header t
+                9   only bt
+                10  only t  
 
             printer_displayMod_set
                 print et littfs  via printer_displayMod_pos
 
-        all region
+        by all region
             printer_display_toggle
                 activ/desactiv  print et littfs 
             spiff_toggle
                 activ/desactiv  littfs
 
         by region
-            activateByVariable_toggle    
+            activateByRegion_toggle    
                 print et littfs 
-            activateByVariable_toggleAddLine
+            activateByRegion_toggleAddLine
                 littfs
-            activateByVariable_toggleSerial
+            activateByRegion_toggleSerial
                 print
 
 */
-    lvl from adriTools_logger
+
 
 #include "logger.h"
 
@@ -74,7 +73,7 @@ char adriLogger_buffer1[1024];
 // char adriLogger_buffer2[1024];
 
 
-//################# adriTools_logger_variables
+//################# adriToolsLogger_region
 //################################################
 //
 // region ################################################  
@@ -83,28 +82,28 @@ char adriLogger_buffer1[1024];
  *
  * @param[in]  name  nom de la region
  */
-adriTools_logger_variables::adriTools_logger_variables(String name){
+adriToolsLogger_region::adriToolsLogger_region(String name){
     _name = name;
     ADRI_LOGV(-1, 2, 2, _state, "%s", _name.c_str());
 }
 /**
 *   @brief      active/desactive totalement la region
 */
-void adriTools_logger_variables::toggle(){
+void adriToolsLogger_region::toggle(){
     _state = !_state;
     ADRI_LOGV(-1, 2, 2, _state, "%s", _name.c_str());    
 }   
 /**
  * @brief       active/desactive "LITTLEFS"
  */
-void adriTools_logger_variables::toggleAddLine(){
+void adriToolsLogger_region::toggleAddLine(){
     _addLine = !_addLine;
     ADRI_LOGV(-1, 2, 2, _addLine, "%s", _name.c_str());    
 } 
 /**
  * @brief       active/desactive "printf"
  */
-void adriTools_logger_variables::toggleSerialPrint(){
+void adriToolsLogger_region::toggleSerialPrint(){
     _serial = !_serial;
     ADRI_LOGV(-1, 2, 2, _serial, "%s", _name.c_str());    
 }   
@@ -113,7 +112,7 @@ void adriTools_logger_variables::toggleSerialPrint(){
  *
  * @return     _addLine
  */
-boolean adriTools_logger_variables::statuAddLine(){
+boolean adriToolsLogger_region::statuAddLine(){
     return _addLine;
 }  
 /**
@@ -121,7 +120,7 @@ boolean adriTools_logger_variables::statuAddLine(){
  *
  * @return     _state
  */  
-boolean adriTools_logger_variables::statu(){
+boolean adriToolsLogger_region::statu(){
     return _state;
 }  
 /**
@@ -129,29 +128,29 @@ boolean adriTools_logger_variables::statu(){
  *
  * @return     _serial
  */
-boolean adriTools_logger_variables::statuSerialPrint(){
+boolean adriToolsLogger_region::statuSerialPrint(){
     return _serial;
 }  
 // endregion >>>> 
 
 
 
-//################# adriTools_logger
+//################# adriToolsLogger
 //################################################
 //
 // region ################################################ consctructor
-adriTools_logger * adriTools_logger_ptr = nullptr;
+adriToolsLogger * adriToolsLogger_ptr = nullptr;
 /**
- * @brief      ptr ver la dernierre instance de la classe "adriTools_logger"
+ * @brief      ptr ver la dernierre instance de la classe "adriToolsLogger"
  *
  * @return     ptr
  */
-adriTools_logger * adriTools_logger_ptrGet(){
-    if (adriTools_logger_ptr == nullptr) adriTools_logger_ptr = new adriTools_logger();
-    return adriTools_logger_ptr;
+adriToolsLogger * adriToolsLogger_ptrGet(){
+    if (adriToolsLogger_ptr == nullptr) adriToolsLogger_ptr = new adriToolsLogger();
+    return adriToolsLogger_ptr;
 }
-adriTools_logger::adriTools_logger(){
-    adriTools_logger_ptr = this;
+adriToolsLogger::adriToolsLogger(){
+    adriToolsLogger_ptr = this;
     spiff_setup();
 }    
 // endregion >>>> consctructor
@@ -160,79 +159,79 @@ adriTools_logger::adriTools_logger(){
 /**
  * @brief      printf des regions et de leur statu
  */
-void adriTools_logger::activateByVariable_print(){
-    for (int i = 0; i < _activateByVariable_cnt; ++i)
+void adriToolsLogger::activateByRegion_print(){
+    for (int i = 0; i < _activateByRegion_cnt; ++i)
     {
         ADRI_LOG(-1, 2, 0, "[%-5d][%-25S][state: %d][_addLine: %d][_serial: %d]", 
             i, 
-            _activateByVariable[i]->_name.c_str(),
-            _activateByVariable[i]->_state,
-            _activateByVariable[i]->_addLine,
-            _activateByVariable[i]->_serial
+            _activateByRegion[i]->_name.c_str(),
+            _activateByRegion[i]->_state,
+            _activateByRegion[i]->_addLine,
+            _activateByRegion[i]->_serial
             );
     }
 }
 /**
- * @brief      ajoute une region, crée une instance "activateByVariable_add" 
+ * @brief      ajoute une region, crée une instance "activateByRegion_add" 
  *
  * @param[in]  pos   The position
  */
-void adriTools_logger::activateByVariable_add(String name){
-    ADRI_LOG(-1, 2, 2, "pos:%d - name:%s", _activateByVariable_cnt, name.c_str());
-    _activateByVariable[_activateByVariable_cnt] = new adriTools_logger_variables(name);
-    _activateByVariable_cnt++;
+void adriToolsLogger::activateByRegion_add(String name){
+    ADRI_LOG(-1, 2, 2, "pos:%d - name:%s", _activateByRegion_cnt, name.c_str());
+    _activateByRegion[_activateByRegion_cnt] = new adriToolsLogger_region(name);
+    _activateByRegion_cnt++;
 }
 /**
 *   @brief      active/desactive totalement la region voullu
 */
-void adriTools_logger::activateByVariable_toggle(int pos){
-    _activateByVariable[pos]->toggle();    
+void adriToolsLogger::activateByRegion_toggle(int pos){
+    _activateByRegion[pos]->toggle();    
 } 
 /**
  * @brief      active/desactive "littlefs" pour la region voullue
  *
- * @param[in]  pos   poistion opur le region "_activateByVariable[pos]"
+ * @param[in]  pos   poistion opur le region "_activateByRegion[pos]"
  */
-void adriTools_logger::activateByVariable_toggleAddLine(int pos){
-    _activateByVariable[pos]->toggleAddLine();    
+void adriToolsLogger::activateByRegion_toggleAddLine(int pos){
+    _activateByRegion[pos]->toggleAddLine();    
 } 
 /**
  * @brief      active/desactive "printf" pour la region voullue
  *
- * @param[in]  pos   poistion opur le region "_activateByVariable[pos]"
+ * @param[in]  pos   poistion opur le region "_activateByRegion[pos]"
  */ 
-void adriTools_logger::activateByVariable_toggleSerial(int pos){
-    _activateByVariable[pos]->toggleSerialPrint();    
+void adriToolsLogger::activateByRegion_toggleSerial(int pos){
+    _activateByRegion[pos]->toggleSerialPrint();    
 } 
 /**
  * @brief     obtenir si la region peut "printf" et "littlefs"
  *
- * @param[in]  pos   poistion opur le region "_activateByVariable[pos]"
+ * @param[in]  pos   poistion opur le region "_activateByRegion[pos]"
  *
  * @return     return boolean
  */
-boolean adriTools_logger::activateByVariable_stau(int pos){
-    return _activateByVariable[pos]->statu();
+boolean adriToolsLogger::activateByRegion_stau(int pos){
+    return _activateByRegion[pos]->statu();
 } 
 /**
  * @brief     obtenir si la region peut "littlefs"
  *
- * @param[in]  pos   poistion opur le region "_activateByVariable[pos]"
+ * @param[in]  pos   poistion opur le region "_activateByRegion[pos]"
  *
  * @return     return boolean
  */ 
-boolean adriTools_logger::activateByVariable_statuAddLine(int pos){
-    return _activateByVariable[pos]->statuAddLine();
+boolean adriToolsLogger::activateByRegion_statuAddLine(int pos){
+    return _activateByRegion[pos]->statuAddLine();
 }
 /**
  * @brief     obtenir si la region peut "printf"
  *
- * @param[in]  pos   poistion opur le region "_activateByVariable[pos]"
+ * @param[in]  pos   poistion opur le region "_activateByRegion[pos]"
  *
  * @return     return boolean
  */    
-boolean adriTools_logger::activateByVariable_statuSerialPrint(int pos){
-    return _activateByVariable[pos]->statuSerialPrint();
+boolean adriToolsLogger::activateByRegion_statuSerialPrint(int pos){
+    return _activateByRegion[pos]->statuSerialPrint();
 }     
 // endregion >>>> activateByVariable
 
@@ -242,7 +241,7 @@ boolean adriTools_logger::activateByVariable_statuSerialPrint(int pos){
  *
  * @return     string
  */
-String adriTools_logger::timeStamp()
+String adriToolsLogger::timeStamp()
 {
   char result[20];
   snprintf(result, 20, "%lu", millis());
@@ -256,7 +255,7 @@ String adriTools_logger::timeStamp()
  *
  * @return     le nombre de similitude
  */
-int adriTools_logger::strContains(char str, const char *sfind) {
+int adriToolsLogger::strContains(char str, const char *sfind) {
     int result = 0;
     int len = strlen(sfind);
     for (int i = 0; i < len; ++i) {   
@@ -278,7 +277,7 @@ int adriTools_logger::strContains(char str, const char *sfind) {
  *
  * @param[in]   lvl   level voullu
  */
-void adriTools_logger::printer_displayMod_set(int lvl){
+void adriToolsLogger::printer_displayMod_set(int lvl){
     printer_displayMod_pos = lvl;
     ADRI_LOGV(-1, 2, 2, printer_displayMod_pos, "", "");  
 }    
@@ -288,42 +287,42 @@ void adriTools_logger::printer_displayMod_set(int lvl){
 /**
  * @brief      acitve/desactive le timestamp
  */
-void adriTools_logger::printer_timestamp_toggle(){
+void adriToolsLogger::printer_timestamp_toggle(){
     printer_timestamp = !printer_timestamp;
     ADRI_LOGV(-1, 2, 2, printer_timestamp, "", "");  
 }
 /**
  * @brief      activer/desactive le freeheap
  */
-void adriTools_logger::printer_heap_toggle(){
+void adriToolsLogger::printer_heap_toggle(){
     printer_heap = !printer_heap;
     ADRI_LOGV(-1, 2, 2, printer_heap, "", "");  
 }
 /**
  * @brief      active/desactive le "printf" et "littfs" pour toutes les region
  */
-void adriTools_logger::printer_display_toggle(){
+void adriToolsLogger::printer_display_toggle(){
     printer_display = !printer_display;
     ADRI_LOGV(-1, 2, 2, printer_display, "", "");  
 }
 /**
  * @brief      active/desactive le "littfs" pour toutes les region
  */
-void adriTools_logger::spiff_toggle(){
+void adriToolsLogger::spiff_toggle(){
     spiff_sav = !spiff_sav;
     ADRI_LOGV(-1, 2, 2, spiff_sav, "", ""); 	
 }
 /**
  * @brief      active/desactive par region < 0 le "littlfs"
  */
-void adriTools_logger::spiffAddLine_otherRegion_toggle(){
+void adriToolsLogger::spiffAddLine_otherRegion_toggle(){
     spiff_addLine_otherRegion = !spiff_addLine_otherRegion;
     ADRI_LOGV(-1, 2, 2, spiff_addLine_otherRegion, "", "");     
 }
 /**
  * @brief      active/desactive par region < 0 le "printf"
  */
-void adriTools_logger::seriealPrint_otherRegion_toggle(){
+void adriToolsLogger::seriealPrint_otherRegion_toggle(){
     seriealPrint_otherRegion = !seriealPrint_otherRegion;
     ADRI_LOGV(-1, 2, 2, seriealPrint_otherRegion, "", "");     
 }
@@ -339,12 +338,12 @@ void adriTools_logger::seriealPrint_otherRegion_toggle(){
  * @return     ""
  */
 String adriToolLogger_serialMenu_region(String cmd, String value){
-    adriTools_logger * _looger = adriTools_logger_ptrGet();
+    adriToolsLogger * _looger = adriToolsLogger_ptrGet();
     ADRI_LOGP(false, -1, -1, 0, "<<<", "");
     ADRI_LOGP(false, -1, 0, 2,"","");
     ADRI_LOGP(false, -1, 2, 2, "cmd: %s - value: %S", cmd.c_str(), value.c_str());  
     int pos = value.toInt();
-    _looger->activateByVariable_toggle(pos);
+    _looger->activateByRegion_toggle(pos);
     ADRI_LOGP(false, -1, 1, 2,"","");
     ADRI_LOGP(false, -1, -1, 0, ">>>", "");
     return "";
@@ -358,12 +357,12 @@ String adriToolLogger_serialMenu_region(String cmd, String value){
  * @return     ""
  */
 String adriToolLogger_serialMenu_regionAddLine(String cmd, String value){
-    adriTools_logger * _looger = adriTools_logger_ptrGet();
+    adriToolsLogger * _looger = adriToolsLogger_ptrGet();
     ADRI_LOGP(false, -1, -1, 0, "<<<", "");
     ADRI_LOGP(false, -1, 0, 2,"","");
     ADRI_LOGP(false, -1, 2, 2, "cmd: %s - value: %S", cmd.c_str(), value.c_str());  
     int pos = value.toInt();
-    _looger->activateByVariable_toggleAddLine(pos);
+    _looger->activateByRegion_toggleAddLine(pos);
     ADRI_LOGP(false, -1, 1, 2,"","");
     ADRI_LOGP(false, -1, -1, 0, ">>>", "");
     return "";
@@ -377,12 +376,12 @@ String adriToolLogger_serialMenu_regionAddLine(String cmd, String value){
  * @return     ""
  */
 String adriToolLogger_serialMenu_regionSerialPrint(String cmd, String value){
-    adriTools_logger * _looger = adriTools_logger_ptrGet();
+    adriToolsLogger * _looger = adriToolsLogger_ptrGet();
     ADRI_LOGP(false, -1, -1, 0, "<<<", "");
     ADRI_LOGP(false, -1, 0, 2,"","");
     ADRI_LOGP(false, -1, 2, 2, "cmd: %s - value: %S", cmd.c_str(), value.c_str());  
     int pos = value.toInt();
-    _looger->activateByVariable_toggleSerial(pos);
+    _looger->activateByRegion_toggleSerial(pos);
     ADRI_LOGP(false, -1, 1, 2,"","");
     ADRI_LOGP(false, -1, -1, 0, ">>>", "");
     return "";
@@ -395,9 +394,8 @@ String adriToolLogger_serialMenu_regionSerialPrint(String cmd, String value){
  *
  * @return     ""
  */
-Strin
 String adriToolLogger_serialMenu_cmd(String cmd, String value){
-    adriTools_logger * _looger = adriTools_logger_ptrGet();
+    adriToolsLogger * _looger = adriToolsLogger_ptrGet();
     ADRI_LOGP(false, -1, -1, 0, "<<<", "");
     ADRI_LOGP(false, -1, 0, 2,"","");
     ADRI_LOGP(false, -1, 2, 2, "cmd: %s - value: %S", cmd.c_str(), value.c_str());  
@@ -421,7 +419,7 @@ String adriToolLogger_serialMenu_cmd(String cmd, String value){
     } else if (value == "o") {
         _looger->seriealPrint_otherRegion_toggle();           
     } else if (value == "p") {
-        _looger->activateByVariable_print();            
+        _looger->activateByRegion_print();            
     } else {
         _looger->printer_displayMod_set(pos);  
     }
@@ -432,7 +430,7 @@ String adriToolLogger_serialMenu_cmd(String cmd, String value){
 /**
  * @brief      printf des comandes disponnible
  */
-void adriTools_logger::serial_menu() {
+void adriToolsLogger::serial_menu() {
     adri_toolsV2 * _ptr = adri_toolsv2Ptr_get();
     if (_ptr->tempStrArray != nullptr) delete[] _ptr->tempStrArray;
     int size = 23;
@@ -474,11 +472,11 @@ void adriTools_logger::serial_menu() {
  *
  * @return     true si un "printf" ou "littlefs" est possible
  */
-boolean adriTools_logger::printer_displayMod(int region, int lvl){
+boolean adriToolsLogger::printer_displayMod(int region, int lvl){
     if (!printer_display) return false;
 
     if (region >= 0) {
-        if (!adriTools_logger_ptrGet()->activateByVariable_stau(region)) return false;
+        if (!adriToolsLogger_ptrGet()->activateByRegion_stau(region)) return false;
 
         if (printer_displayMod_pos == 6) return false;
         if (printer_displayMod_pos == 7) {
@@ -516,7 +514,7 @@ boolean adriTools_logger::printer_displayMod(int region, int lvl){
 
 // region ################################################ printer line
 void esp_log_print_lines(boolean addLine, int region, int lvl, int mod, String pLine, String func, String var, const char *tag ){
-    adriTools_logger * _looger = adriTools_logger_ptrGet();
+    adriToolsLogger * _looger = adriToolsLogger_ptrGet();
     String  pTag        = String(tag);
     int     searchCR    = 0;
     searchCR = _looger->strContains('\n', tag);    
@@ -647,7 +645,7 @@ void esp_log_print_lines(boolean addLine, int region, int lvl, int mod, String p
  * @param[in]  region   The region
  * @param      buffer   The buffer
  */
-void adriTools_logger::printer_serial(boolean addLine, int region, char * buffer){
+void adriToolsLogger::printer_serial(boolean addLine, int region, char * buffer){
     String          result  = String(buffer);
     unsigned int    len     = result.length();
     char            bufferPrint[len + 255];
@@ -664,13 +662,13 @@ void adriTools_logger::printer_serial(boolean addLine, int region, char * buffer
 
     if (spiff_sav && addLine) {
         if (region >= 0) {
-             if (adriTools_logger_ptrGet()->activateByVariable_statuAddLine(region)) {spiff_addLine(String(bufferPrint));}
+             if (adriToolsLogger_ptrGet()->activateByRegion_statuAddLine(region)) {spiff_addLine(String(bufferPrint));}
         } else {
             if (spiff_addLine_otherRegion) spiff_addLine(String(bufferPrint));
         }
     }
     if (region >= 0) {
-         if (adriTools_logger_ptrGet()->activateByVariable_statuSerialPrint(region)) {fsprintf("%s\n", bufferPrint);}
+         if (adriToolsLogger_ptrGet()->activateByRegion_statuSerialPrint(region)) {fsprintf("%s\n", bufferPrint);}
     } else {
         if (seriealPrint_otherRegion) fsprintf("%s\n", bufferPrint);
     }
@@ -679,7 +677,7 @@ void adriTools_logger::printer_serial(boolean addLine, int region, char * buffer
 
 // region ################################################ esp_log_printf_
 void  esp_log_printf_(int region, int lvl, int mod, String line, String func, String var, const char *tag) {
-    if (!adriTools_logger_ptrGet()->printer_displayMod(region, lvl)) return;
+    if (!adriToolsLogger_ptrGet()->printer_displayMod(region, lvl)) return;
     String pLine = "";
     switch (mod) {
         case 1:
@@ -694,7 +692,7 @@ void  esp_log_printf_(int region, int lvl, int mod, String line, String func, St
     esp_log_print_lines(true, region, lvl, mod, pLine, func, var, tag );
 }
 void  esp_log_printf_(int region, int lvl, int mod, String line, String func, const char *tag) {
-    if (!adriTools_logger_ptrGet()->printer_displayMod(region, lvl)) return;
+    if (!adriToolsLogger_ptrGet()->printer_displayMod(region, lvl)) return;
     String pLine = "";
     switch (mod) {
         case 1:
@@ -709,7 +707,7 @@ void  esp_log_printf_(int region, int lvl, int mod, String line, String func, co
     esp_log_print_lines(true, region, lvl, mod, pLine, func, (char*)"", tag );
 } 
 void  esp_log_printf_(boolean addLine, int region, int lvl, int mod, String line, String func, const char *tag) {
-    if (!adriTools_logger_ptrGet()->printer_displayMod(region, lvl)) return;
+    if (!adriToolsLogger_ptrGet()->printer_displayMod(region, lvl)) return;
     String pLine = "";
     switch (mod) {
         case 1:
@@ -730,7 +728,7 @@ void  esp_log_printf_(boolean addLine, int region, int lvl, int mod, String line
  * @brief      initialize le fichier log
  * @details    utiliser pour chaque demmarage de l'esp, inscript dans le fichier log la raisson du dernier reset de l'esp 
  */
-void adriTools_logger::spiff_setup(){
+void adriToolsLogger::spiff_setup(){
 
 
 	ADRI_LOG(-1, 0, 2,"","");
@@ -766,7 +764,7 @@ void adriTools_logger::spiff_setup(){
  *
  * @param[int/out]  result  totalitée du fichier log
  */
-void adriTools_logger::spiff_get(String & ret){
+void adriToolsLogger::spiff_get(String & ret){
 	// ADRI_LOG(-1, 0, 2,"","");
 
     String lines = "";
@@ -792,7 +790,7 @@ void adriTools_logger::spiff_get(String & ret){
  *
  * @param[in]  result  la ligne a ajouter
  */
-void adriTools_logger::spiff_addLine(String result){
+void adriToolsLogger::spiff_addLine(String result){
     // String old;
     // spiff_get(old);
     File file = LittleFS.open(spiff_folder+"/"+spiff_fileName, "a");
@@ -803,7 +801,7 @@ void adriTools_logger::spiff_addLine(String result){
 /**
  * @brief      printf du fichier log
  */
-void adriTools_logger::spiff_readCurrent(){
+void adriToolsLogger::spiff_readCurrent(){
     ADRI_LOG(-1, 0, 2, "", "");
 
     fsprintf("\n[spiff_readCurrent]\n"); 
@@ -830,7 +828,7 @@ void adriTools_logger::spiff_readCurrent(){
 /**
  * @brief      supprime le fichier log de la mem spiff
  */
-void adriTools_logger::spiff_removeCurrent(){
+void adriToolsLogger::spiff_removeCurrent(){
 	LittleFS.remove(spiff_folder+"/"+spiff_fileName);
 }
    	
