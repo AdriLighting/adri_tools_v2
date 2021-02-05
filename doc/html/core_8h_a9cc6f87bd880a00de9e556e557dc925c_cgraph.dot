@@ -1,0 +1,33 @@
+digraph "esp_log_printf_"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="esp_log_printf_",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="adriTools_logger_ptrGet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$logger_8cpp.html#ab531df7c4434211479c7647d94841074",tooltip="ptr ver la dernierre instance de la classe \"adriTools_logger\""];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="esp_log_print_lines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$logger_8cpp.html#a78d70cc9c535c61c31b5c8ca484a0ef3",tooltip=" "];
+  Node3 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="adriTools_logger::printer\l_serial",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger.html#a7dad8dab07a00f2bf3aa98d720c40072",tooltip="fonction final pour le \"printf\" et \"littfs\""];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="adriTools_logger::activate\lByVariable_statuAddLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger.html#acdb0309dc69329a098bd9b5e9ec8ce45",tooltip="obtenir si la region peut \"littlefs\""];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="adriTools_logger_variables\l::statuAddLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger__variables.html#adfee290344d9b55f773edd8228b339f4",tooltip="get the value of _addLine"];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="adriTools_logger::activate\lByVariable_statuSerialPrint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger.html#ab87e9a1ffd4802579abdf32e3a9ff4c3",tooltip="obtenir si la region peut \"printf\""];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="adriTools_logger_variables\l::statuSerialPrint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger__variables.html#ad1b3e3d7285dc28df29c3e4aa222d2f0",tooltip="get the value of _serial"];
+  Node4 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="adriTools_logger::spiff\l_addLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger.html#a7e4c0281b1bfd0e595ac1016450d15ca",tooltip="ajoute un ligne au fichier log"];
+  Node4 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="adriTools_logger::timeStamp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger.html#ae07ce5b41217b60db13f757abf1593fd",tooltip="création du tempstamp"];
+  Node3 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="adriTools_logger::strContains",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger.html#a11e74723a92a6cf90fef0bbf4f688220",tooltip="recherche des similitude dans une chaine de caractére"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="ArduinoTrace::strlen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_arduino_trace.html#a3089af7d454fda5903dc27fbdba9c4ff",tooltip=" "];
+  Node3 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

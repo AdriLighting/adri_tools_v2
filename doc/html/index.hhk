@@ -1,0 +1,1332 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a2d6ac9f6a6ae0306241f9304d24c3cb6"><param name="Name" value="_activateByVariable"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#af651b230341326437c77e7585f2fd62d"><param name="Name" value="_activateByVariable_cnt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#ab9dcc57ca3dd73e6f01bc2a52d1063d4"><param name="Name" value="_addLine"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#aff99d6ebff43907a728910c4ccda8006"><param name="Name" value="_cmd_1_Array"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a11a4cf19153ce4d12b3edc8b3de78f89"><param name="Name" value="_cmd_1_cnt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#ace1c7bdefbdccae2b30c0a995ddccf78"><param name="Name" value="_cmd_2_Array"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a4196038ea0f8ccca5f16b346bda02dc1"><param name="Name" value="_cmd_2_cnt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#ab092e9136a7cd2f90bd9ffa90bf302b4"><param name="Name" value="_cmd_3"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a9b7ff244e590f50076a99ac16345c4bc"><param name="Name" value="_cmd_3_desc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#afc131b64ba7ab8719b5926ae453f1c10"><param name="Name" value="_cmd_3_sep"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#af3dbaf4c5904828d94ab1e3b4b41dde3"><param name="Name" value="_cmd_4"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a6bcc4ec1a9aca6e65581ea0f89229f86"><param name="Name" value="_cmd_4_desc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a81d5e9658e58d27a527e86a3ade10591"><param name="Name" value="_cmd_4_sep"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html#a765a32dd3af6d49b0ac06e9ff0766668"><param name="Name" value="_function"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html#ad371e8d2f5f101c9e4cc1e34e0bad0f5"><param name="Name" value="_key"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#ab307c5150b0e08b6e96d32726fe6df41"><param name="Name" value="_name"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#ab307c5150b0e08b6e96d32726fe6df41"><param name="Name" value="adriTools_logger_variables"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html#a533ecf13964fe9cc233be0afa8264126"><param name="Name" value="_name"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html#a9a9ecd5f94fa79ed56bf4c614929da1b"><param name="Name" value="_ret"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#a78f2fafb6681bf1a75440c49b794a46c"><param name="Name" value="_serial"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a58d55b852edf544c5db47722a52dec36"><param name="Name" value="_SPIFFS_printFiles"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#adbb2d38388e52de2c236e8183db1db53"><param name="Name" value="_state"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#ae355cc14ef5a048f21d283957b5d20cc"><param name="Name" value="_telnet_get"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a62f7b519c5e36e9ffb7269a12f1a071e"><param name="Name" value="_telnet_loop"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a5e84a945c06e6be0d54b678ea84d9da6"><param name="Name" value="_telnet_put"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a1368614534a0ccee98b06f29284e83aa"><param name="Name" value="_telnet_setup"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a2d2c33ef9d448673c03001237b2a397a"><param name="Name" value="_telnetGet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a60c74a72f2069b2b0145a61175b2256a"><param name="Name" value="_telnetLoop"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a560fe6b483d3c3c78dd9adf9572d3e15"><param name="Name" value="_telnetPut"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a9d76034df032aaee57c868b801cc7921"><param name="Name" value="_telnetSetup"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#aac202317332bc380aadd7ddd84fbe2b9"><param name="Name" value="activateByVariable_add"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a796b80e3834577ea137021e4846b453e"><param name="Name" value="activateByVariable_print"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#acdb0309dc69329a098bd9b5e9ec8ce45"><param name="Name" value="activateByVariable_statuAddLine"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ab87e9a1ffd4802579abdf32e3a9ff4c3"><param name="Name" value="activateByVariable_statuSerialPrint"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a6de77565565c74e7aafee910df782d7a"><param name="Name" value="activateByVariable_stau"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a1d80d7eea79fdef03e7bc6baec2b2757"><param name="Name" value="activateByVariable_toggle"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a8290413f677d6d9cbeb2039204bd5271"><param name="Name" value="activateByVariable_toggleAddLine"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a247582c4119100647112ffae8282a235"><param name="Name" value="activateByVariable_toggleSerial"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#aa91be1ece4dfbcf8ae21abd6a613beb3"><param name="Name" value="ADRI_LOG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#ab6ad7858b79a2c682a9b9e64ac34793e"><param name="Name" value="adri_log_"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#aad1f9b13e82ebc3cd6593e6eadc374f1"><param name="Name" value="adri_log_f"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a843deab2e771afa4330966569793ebef"><param name="Name" value="adri_log_v"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a6e3181be2119b5376a986c676af73d2f"><param name="Name" value="ADRI_LOGP"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#aba33f5c5b5a2e8d1e2f8b4c3ae7128d5"><param name="Name" value="ADRI_LOGV"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#a152eacf40601cfa5397198643b8aa88d"><param name="Name" value="adri_telenet_client"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#a0843a8ea38f629385dc7f2899829727e"><param name="Name" value="adri_telenet_server"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__telnet.html"><param name="Name" value="adri_telnet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__telnet.html"><param name="Name" value="adri_telnet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__telnet.html#ae7e59a7ce7a44403370d69ce5a95377f"><param name="Name" value="adri_telnet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__telnet.html"><param name="Name" value="adri_telnet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__telnet.html#aee4d89006feb2b5d346ed16057400ee6"><param name="Name" value="telnet_get"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__telnet.html"><param name="Name" value="adri_telnet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__telnet.html#a2547f10200724a9e771ee33df715825a"><param name="Name" value="telnet_loop"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__telnet.html"><param name="Name" value="adri_telnet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__telnet.html#aec35ce286c2a2deea2f8a0a5519bdeb7"><param name="Name" value="telnet_put"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__telnet.html#a2c563b5f9787e9683b479862604fc60c"><param name="Name" value="adri_telnet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a58d55b852edf544c5db47722a52dec36"><param name="Name" value="_SPIFFS_printFiles"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a2d2c33ef9d448673c03001237b2a397a"><param name="Name" value="_telnetGet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a60c74a72f2069b2b0145a61175b2256a"><param name="Name" value="_telnetLoop"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a560fe6b483d3c3c78dd9adf9572d3e15"><param name="Name" value="_telnetPut"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a9d76034df032aaee57c868b801cc7921"><param name="Name" value="_telnetSetup"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a541db16aa47bb00f8721a43809f45242"><param name="Name" value="adri_toolsV2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a6d235996e503bdc8584edc3c0292cdb8"><param name="Name" value="boot_device"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#acb67ed535bc7df30360efe14e23e03df"><param name="Name" value="ch_toString"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#aa10fbc6021a6d765a2ac5bebfdb7e964"><param name="Name" value="ch_toString"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a41be71f5e6a3fa986920b81ea0b840b4"><param name="Name" value="ESP_boot_info"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#ab769e8ed019f544d4e3bb9b0da53d27e"><param name="Name" value="ESP_core_info"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a5401e04d858d66416f348c1a18f3901e"><param name="Name" value="ESP_flash_info"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a4d8f837baf4ad10ad7af569f1b9301a4"><param name="Name" value="explode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#af2144cd7fb2f486346aa5bca3b24c711"><param name="Name" value="heap_last"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a8074ca2dd8175fb9f4b7b14359777840"><param name="Name" value="heap_monitor"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a5cacce0dfe4cf7f8d505429769e3e986"><param name="Name" value="heap_monitorLoop"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#af791a67f2e717272a38de002c1e929e0"><param name="Name" value="heap_monitorToggle"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a1289f2f2ab2a61fc9a09254063f01fc7"><param name="Name" value="heap_print"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a44c707247a51714f95806ac87c6c0d1d"><param name="Name" value="heap_start"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a897a8a2acff3f104a08cf0f798d194b3"><param name="Name" value="heap_string"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a9e5571ca7c5450da7bfc8a1e9c656119"><param name="Name" value="info_parm"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#aa93dbca6608a4cbc9633918bfcf6ef4f"><param name="Name" value="ip2string"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#aed63f7efb8d33690972d75fbd2ff89ef"><param name="Name" value="jsonAddIntValue"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a9041deb22a1c7ed89f95f0d227436a22"><param name="Name" value="jsonAddIntValue"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#aa347446f0543b0db9cedb2706cfa5a62"><param name="Name" value="jsonAddStringsValue"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#af30578cfd2803dce38c2933c1d8ae1d9"><param name="Name" value="literal_item"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a570685e6722c39733765a20a87a272c5"><param name="Name" value="literal_value"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#ac26abc72f088286e16d7d6cf1d48c20b"><param name="Name" value="log_filePath"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#aaaec68e2497a034306db0ae801cac6de"><param name="Name" value="log_filePath_set"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#ac1c9321e57d8b158638b3f0d873f9a22"><param name="Name" value="log_read"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a1f2d94f3c8edd3962fed6a712fff1d04"><param name="Name" value="log_write"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#ad35d57c21b428d242cc172a5002718f1"><param name="Name" value="log_write"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a0aed4cd545a821664a18546986c1cebf"><param name="Name" value="loop"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a2afe642429d0f957bc5441e652a8e1a8"><param name="Name" value="on_time"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a7464eb6c4402dd9eb25b4d72b4d5f2df"><param name="Name" value="on_time"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a840bdefab4b7ae7f9b725dbb49b66641"><param name="Name" value="reset_cause"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a11f42d2aaedc8653ca182a33916ec580"><param name="Name" value="seconds2time"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a6fd3e6a951988aea8b36ce65bffed930"><param name="Name" value="SPIFFS_printFiles"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#af341566573d64aa9c74cc76d8d5bac40"><param name="Name" value="string2ip"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a8d549d7730edcc1f7eb50b9a1eb02c8b"><param name="Name" value="tempStr_get"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a43df8c712c1b24e228c4f406a4a816c8"><param name="Name" value="tempStr_get"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#adb5c487191baeaba9deb605b104a2606"><param name="Name" value="tempStr_print"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#acf86359b7495715e5015849faaeac518"><param name="Name" value="tempStr_sizeSet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a7a492603cceba632a821e4f66c96d019"><param name="Name" value="tempStrArray"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#ae161b47a4bfc4534cde30ca8c5deadd8"><param name="Name" value="tempStrArraySize"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a85632dfa6be805aa7bb0c55abff09189"><param name="Name" value="adri_toolsV2"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a11973381a212f34c38f3d1b708621b39"><param name="Name" value="adri_toolsv2_ptr"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#ab168251e0feaf91acd5dd8882d823a4d"><param name="Name" value="adri_toolsv2_trace"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a2b69a357d9a2272f5e1839ab22a1b27d"><param name="Name" value="adri_toolsv2Ptr_get"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a2b69a357d9a2272f5e1839ab22a1b27d"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a2b69a357d9a2272f5e1839ab22a1b27d"><param name="Name" value="adri_toolsv2Ptr_get"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#aa7d37f1fff78d5fcb88dc2756c9a1def"><param name="Name" value="adriLogger_buffer1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a93c503c8e3fd8721385e7f99c1ebf9c7"><param name="Name" value="adriToolLogger_serialMenu_cmd"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a93c503c8e3fd8721385e7f99c1ebf9c7"><param name="Name" value="logger.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8h.html#a93c503c8e3fd8721385e7f99c1ebf9c7"><param name="Name" value="adriToolLogger_serialMenu_cmd"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a7993b80853348dd107e600f44136305e"><param name="Name" value="adriToolLogger_serialMenu_region"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a7993b80853348dd107e600f44136305e"><param name="Name" value="logger.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8h.html#a7993b80853348dd107e600f44136305e"><param name="Name" value="adriToolLogger_serialMenu_region"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a5999f850d0c87d3a22811b50a825d734"><param name="Name" value="adriToolLogger_serialMenu_regionAddLine"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a5999f850d0c87d3a22811b50a825d734"><param name="Name" value="logger.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8h.html#a5999f850d0c87d3a22811b50a825d734"><param name="Name" value="adriToolLogger_serialMenu_regionAddLine"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a7a82ed377568d9d18fe3c64c0338345c"><param name="Name" value="adriToolLogger_serialMenu_regionSerialPrint"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a7a82ed377568d9d18fe3c64c0338345c"><param name="Name" value="logger.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8h.html#a7a82ed377568d9d18fe3c64c0338345c"><param name="Name" value="adriToolLogger_serialMenu_regionSerialPrint"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a2f7ab7774d5cdeee83f2aee9e977bfe9"><param name="Name" value="adriTools_ch_cr"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a2f7ab7774d5cdeee83f2aee9e977bfe9"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a2f7ab7774d5cdeee83f2aee9e977bfe9"><param name="Name" value="adriTools_ch_cr"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a2d6ac9f6a6ae0306241f9304d24c3cb6"><param name="Name" value="_activateByVariable"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#af651b230341326437c77e7585f2fd62d"><param name="Name" value="_activateByVariable_cnt"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#aac202317332bc380aadd7ddd84fbe2b9"><param name="Name" value="activateByVariable_add"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a796b80e3834577ea137021e4846b453e"><param name="Name" value="activateByVariable_print"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#acdb0309dc69329a098bd9b5e9ec8ce45"><param name="Name" value="activateByVariable_statuAddLine"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ab87e9a1ffd4802579abdf32e3a9ff4c3"><param name="Name" value="activateByVariable_statuSerialPrint"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a6de77565565c74e7aafee910df782d7a"><param name="Name" value="activateByVariable_stau"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a1d80d7eea79fdef03e7bc6baec2b2757"><param name="Name" value="activateByVariable_toggle"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a8290413f677d6d9cbeb2039204bd5271"><param name="Name" value="activateByVariable_toggleAddLine"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a247582c4119100647112ffae8282a235"><param name="Name" value="activateByVariable_toggleSerial"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a7f4db634efbed22bec759c7266c14732"><param name="Name" value="adriTools_logger"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#aeb305d3ce0a17302821148ea83d1f5b5"><param name="Name" value="printer_display"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ab5e3f047773f080002abac74bab07481"><param name="Name" value="printer_display_lvl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#aea9f08d7307f737d069ddbb7e5b30d7a"><param name="Name" value="printer_display_lvl_set"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a3bd7b04b83b72964a355e5bcd6d9fc10"><param name="Name" value="printer_display_toggle"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a2fe5b72abc4da73a5b561501410af47d"><param name="Name" value="printer_displayMod"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#aaebe1820509a1bc5a2b324e4ecb61e27"><param name="Name" value="printer_heap"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#aa3779b47d448c2046176f274914d234d"><param name="Name" value="printer_heap_toggle"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a7dad8dab07a00f2bf3aa98d720c40072"><param name="Name" value="printer_serial"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ab8bb810a5266771170506af71848b7fc"><param name="Name" value="printer_timestamp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a261e1507cd96ea83296eb788c46b91c7"><param name="Name" value="printer_timestamp_toggle"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a0b5a64d32e27c5f368b40c913b019330"><param name="Name" value="serial_menu"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a8fec172a8cafbfba0d8ce38659fdf5db"><param name="Name" value="seriealPrint_otherRegion"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ae825acefc5a05fb4cee2a2da0e8eeab2"><param name="Name" value="seriealPrint_otherRegion_toggle"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a7e4c0281b1bfd0e595ac1016450d15ca"><param name="Name" value="spiff_addLine"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a603f59a428a542e5625f916fbf732124"><param name="Name" value="spiff_addLine_otherRegion"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a9f79425a20e46a4bfaea9a5418cf8ee4"><param name="Name" value="spiff_addLine_otherRegion_toggle"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ac01d521db0f9631e1fed4ce094364123"><param name="Name" value="spiff_fileName"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ab45b75e872a3a465e2347a55482426dc"><param name="Name" value="spiff_folder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ae2e25e471b06fcad73846c2924917fb9"><param name="Name" value="spiff_get"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ad9c51e26a69dacca73d01b56e13dbc8c"><param name="Name" value="spiff_readCurrent"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a28ce63ce7119940db3cacff713dd8518"><param name="Name" value="spiff_removeCurrent"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a5e38c01f31603c4946182ecec0d5ea57"><param name="Name" value="spiff_sav"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a3f41a4a74afb66d7020c3aad3deb9795"><param name="Name" value="spiff_setup"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#af88ba93a4dde4a11b3cff65be5f4dbb4"><param name="Name" value="spiff_toggle"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a11e74723a92a6cf90fef0bbf4f688220"><param name="Name" value="strContains"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html"><param name="Name" value="adriTools_logger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ae07ce5b41217b60db13f757abf1593fd"><param name="Name" value="timeStamp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a41fd628081d473436f2f57cc3d1a0dec"><param name="Name" value="adriTools_logger"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#ae014540fdb397dfc87b409a345e81360"><param name="Name" value="adriTools_logger_ptr"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#ab531df7c4434211479c7647d94841074"><param name="Name" value="adriTools_logger_ptrGet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#ab531df7c4434211479c7647d94841074"><param name="Name" value="logger.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8h.html#ab531df7c4434211479c7647d94841074"><param name="Name" value="adriTools_logger_ptrGet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html"><param name="Name" value="adriTools_logger_variables"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html"><param name="Name" value="adriTools_logger_variables"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#ab9dcc57ca3dd73e6f01bc2a52d1063d4"><param name="Name" value="_addLine"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html"><param name="Name" value="adriTools_logger_variables"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#ab307c5150b0e08b6e96d32726fe6df41"><param name="Name" value="_name"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html"><param name="Name" value="adriTools_logger_variables"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#a78f2fafb6681bf1a75440c49b794a46c"><param name="Name" value="_serial"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html"><param name="Name" value="adriTools_logger_variables"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#adbb2d38388e52de2c236e8183db1db53"><param name="Name" value="_state"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html"><param name="Name" value="adriTools_logger_variables"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#afdb453ad214d5658de01ca3606b65e47"><param name="Name" value="adriTools_logger_variables"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html"><param name="Name" value="adriTools_logger_variables"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#ac70f902f0c5850ba337fc0ecb382889e"><param name="Name" value="statu"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html"><param name="Name" value="adriTools_logger_variables"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#adfee290344d9b55f773edd8228b339f4"><param name="Name" value="statuAddLine"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html"><param name="Name" value="adriTools_logger_variables"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#ad1b3e3d7285dc28df29c3e4aa222d2f0"><param name="Name" value="statuSerialPrint"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html"><param name="Name" value="adriTools_logger_variables"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#a05688bf23fa466a48a15ac67399b51a9"><param name="Name" value="toggle"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html"><param name="Name" value="adriTools_logger_variables"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#a9d9b9a2a27ae08a428b4df36527ef9cb"><param name="Name" value="toggleAddLine"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#a7afc400baa67935a0c23bb718b24bc82"><param name="Name" value="adriTools_logger_variables"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a73d78c4550a8dd56b8f1cf0734cc60b3"><param name="Name" value="adriTools_PrBuffer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a73d78c4550a8dd56b8f1cf0734cc60b3"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#ad20089a8eccaa30291a4b68c73363327"><param name="Name" value="adriTools_PrBuffer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a5bb6d14afdbe82fa08a019f89ea84d88"><param name="Name" value="adriTools_print"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a5bb6d14afdbe82fa08a019f89ea84d88"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#aa09d3f2e944f865b05880484844691a9"><param name="Name" value="adriTools_print"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a6edb4e03cc241f618ebf0937e83979d4"><param name="Name" value="adriTools_printLn"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a6edb4e03cc241f618ebf0937e83979d4"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a6edb4e03cc241f618ebf0937e83979d4"><param name="Name" value="adriTools_printLn"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#aff99d6ebff43907a728910c4ccda8006"><param name="Name" value="_cmd_1_Array"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a11a4cf19153ce4d12b3edc8b3de78f89"><param name="Name" value="_cmd_1_cnt"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#ace1c7bdefbdccae2b30c0a995ddccf78"><param name="Name" value="_cmd_2_Array"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a4196038ea0f8ccca5f16b346bda02dc1"><param name="Name" value="_cmd_2_cnt"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#ab092e9136a7cd2f90bd9ffa90bf302b4"><param name="Name" value="_cmd_3"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a9b7ff244e590f50076a99ac16345c4bc"><param name="Name" value="_cmd_3_desc"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#afc131b64ba7ab8719b5926ae453f1c10"><param name="Name" value="_cmd_3_sep"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#af3dbaf4c5904828d94ab1e3b4b41dde3"><param name="Name" value="_cmd_4"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a6bcc4ec1a9aca6e65581ea0f89229f86"><param name="Name" value="_cmd_4_desc"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a81d5e9658e58d27a527e86a3ade10591"><param name="Name" value="_cmd_4_sep"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a84d6acad2d78b24aa51dee6ff80dec64"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a2025af95d28e8440a8ab39f2c20b0b31"><param name="Name" value="cmd_3"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#ad6aaa7aa50526a937b968eccb1d6a6c4"><param name="Name" value="cmd_4"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a886a35a176cab7b9bca8d5e9b783305f"><param name="Name" value="cmd_array"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a28f60b235a6174d826374f63c523ed5a"><param name="Name" value="cmd_item_add"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#aed260139cd339ef075778f0189eb0592"><param name="Name" value="loop"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a829a4d46c0878cfb933843edf6d87e7f"><param name="Name" value="menu"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a9f90a29ffca29c0b4899c89e722395af"><param name="Name" value="read"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a4f324f750c620a3e948eafaa0e1e4860"><param name="Name" value="splitText"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#ab1c7daff46a07332af18b10eebf65ddc"><param name="Name" value="adriToolsv2_serialRead"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="menu__serial_8cpp.html#a4d8df1887f2e2e933d44f2b815ee96ed"><param name="Name" value="adriToolsv2_serialRead_ptr"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html"><param name="Name" value="adriToolsv2_serialReadItem"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html"><param name="Name" value="adriToolsv2_serialReadItem"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html#a765a32dd3af6d49b0ac06e9ff0766668"><param name="Name" value="_function"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html"><param name="Name" value="adriToolsv2_serialReadItem"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html#ad371e8d2f5f101c9e4cc1e34e0bad0f5"><param name="Name" value="_key"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html"><param name="Name" value="adriToolsv2_serialReadItem"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html#a533ecf13964fe9cc233be0afa8264126"><param name="Name" value="_name"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html"><param name="Name" value="adriToolsv2_serialReadItem"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html#a9a9ecd5f94fa79ed56bf4c614929da1b"><param name="Name" value="_ret"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html"><param name="Name" value="adriToolsv2_serialReadItem"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html#a2cf67839f2c794523e15f7af14523570"><param name="Name" value="adriToolsv2_serialReadItem"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html"><param name="Name" value="adriToolsv2_serialReadItem"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html#a474a7d6ba4c8f010f7a2255defca8aec"><param name="Name" value="item_add"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html#a33cd2cbc1b45aa7626cafa0d46003e72"><param name="Name" value="adriToolsv2_serialReadItem"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="menu__serial_8cpp.html#a9ea619b46547442c6d88d2fcf6af126a"><param name="Name" value="adriToolsv2_serialReadPtr_get"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="menu__serial_8cpp.html#a9ea619b46547442c6d88d2fcf6af126a"><param name="Name" value="menu_serial.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="menu__serial_8h.html#a9ea619b46547442c6d88d2fcf6af126a"><param name="Name" value="adriToolsv2_serialReadPtr_get"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_arduino_trace.html"><param name="Name" value="ArduinoTrace"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#ac8988ab2b13f65847fed00d60ae33ea4"><param name="Name" value="ARDUINOTRACE_CONCAT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a86732f6c8210f80d349b07e7bdeaf3df"><param name="Name" value="ARDUINOTRACE_DUMP"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#aed3cf71100dda548bbd534985d7192f3"><param name="Name" value="ARDUINOTRACE_DUMP_PREFIX"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a7d1e70fad00890cc5357465f9527169d"><param name="Name" value="ARDUINOTRACE_DUMP_SHORT_PREFIX"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a7d69379e3b326b08e91fb560b71080bf"><param name="Name" value="ARDUINOTRACE_DUMPL"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a167f7a061eff0ef1a8c793cd5e9b97f6"><param name="Name" value="ARDUINOTRACE_DUMPS"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#ad7d0bbb88c8be211a6af1cc5534f8158"><param name="Name" value="ARDUINOTRACE_ENABLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#ad4e0df95e9ee3dde1d6398cd51f13c49"><param name="Name" value="ARDUINOTRACE_ENABLE_FULLPATH"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a5dcb87b871adbd4cd1f46800b4778b99"><param name="Name" value="ARDUINOTRACE_ENABLE_PROGMEM"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a87f3289f2c0a4cff1d92a2382ce89ee1"><param name="Name" value="ARDUINOTRACE_FLASHIFY"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a744fcf1cd761a885925e361b6cdb5a86"><param name="Name" value="ARDUINOTRACE_FUNCTION_NAME"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a5cef6cd5f4a16a34e01756a752bbc1f3"><param name="Name" value="ARDUINOTRACE_FUNCTION_NAME_IN_FLASH"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a91257c6f9def5edcf3ff863b6e445648"><param name="Name" value="ARDUINOTRACE_INIT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#af8f2575c80737b4af1f759c4d69ea46e"><param name="Name" value="ARDUINOTRACE_INITIALIZE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a361ced843bc617ab6aa98cb4487e7555"><param name="Name" value="ARDUINOTRACE_PRINT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#adb054a8888d82560aefa791fa5b58305"><param name="Name" value="ARDUINOTRACE_PRINTF"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a8cf7a62ec7e370d93b81279cd7d5518d"><param name="Name" value="ARDUINOTRACE_PRINTL"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a9e6a49dbd9c31949902f01efbd30f176"><param name="Name" value="ARDUINOTRACE_PRINTV"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a5f11e423ab62461d873f31287a8128ae"><param name="Name" value="ARDUINOTRACE_SERIAL"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a0ec57eea499deee5c360703df020bccd"><param name="Name" value="ARDUINOTRACE_STRINGIFY"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a652d570a7c8704aa1ae5a4e191a533b3"><param name="Name" value="ARDUINOTRACE_TRACE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#ac998889a29006837ae124d2ba6d8e7a0"><param name="Name" value="ARDUINOTRACE_TRACE_PREFIX"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a261e820c55d802f98eea6b6b20650c34"><param name="Name" value="ARDUINOTRACE_TRACE_SHORT_PREFIX"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a3dc67fbd675476d56b749181424449d7"><param name="Name" value="ARDUINOTRACE_TRACEF"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#ae675146672beef2c828f3a1eb05fcfbd"><param name="Name" value="ARDUINOTRACE_TRACEL"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a6b5cc0d1c296979a2a04a4a9f23c3f5a"><param name="Name" value="ARDUINOTRACE_TRACES"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a050c8048ae191aa56c00543c27c14e46"><param name="Name" value="make_string"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a3089af7d454fda5903dc27fbdba9c4ff"><param name="Name" value="ArduinoTrace.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1_initializer.html"><param name="Name" value="ArduinoTrace::Initializer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1_initializer.html#a46551cb41e120f2d7d095655add61f66"><param name="Name" value="ArduinoTrace::Initializer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1_printer.html"><param name="Name" value="ArduinoTrace::Printer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1_printer.html#ac81b50c96db0f870407067dd4d955a14"><param name="Name" value="ArduinoTrace::Printer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1_printer_d.html"><param name="Name" value="ArduinoTrace::PrinterD"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1_printer_d.html#aeb61a56d9c752328d1ceecf9b43da182"><param name="Name" value="ArduinoTrace::PrinterD"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1_printer_f.html"><param name="Name" value="ArduinoTrace::PrinterF"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1_printer_f.html#a65495d0c8a76b03bc998b44101fbd4a0"><param name="Name" value="ArduinoTrace::PrinterF"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1_printer_l.html"><param name="Name" value="ArduinoTrace::PrinterL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1_printer_l.html#ac9e222436552f7d39b8fc4b0f2f266d2"><param name="Name" value="ArduinoTrace::PrinterL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string.html"><param name="Name" value="ArduinoTrace::string"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string.html#a64f17f35e167bae5f61b064792ef9d65"><param name="Name" value="ArduinoTrace::string"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string__maker.html"><param name="Name" value="ArduinoTrace::string_maker"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string__maker_3_01_t_source_string_00_010_00_01collected_chars_8_8_8_01_4.html"><param name="Name" value="ArduinoTrace::string_maker< TSourceString, 0, collectedChars... >"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string__maker_3_01_t_source_string_00_010_00_01collected_chars_8_8_8_01_4.html#ae0faa352a6ec3bd13fa60fe6b7db172b"><param name="Name" value="ArduinoTrace::string_maker< TSourceString, 0, collectedChars... >"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string__maker_3_01_t_source_string_00_01remaining_length_00_01'_2'_00_01collected_chars_8_8_8_01_4.html"><param name="Name" value="ArduinoTrace::string_maker< TSourceString, remainingLength, '/', collectedChars... >"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string__maker_3_01_t_source_string_00_01remaining_length_00_01'_2'_00_01collected_chars_8_8_8_01_4.html#a1877a49d6dd48a5dc131a40304c50a5e"><param name="Name" value="ArduinoTrace::string_maker< TSourceString, remainingLength, '/', collectedChars... >"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string__maker_3_01_t_source_string_00_01remaining_length_00_01'_0c_0c'_00_01collected_chars_8_8_8_01_4.html"><param name="Name" value="ArduinoTrace::string_maker< TSourceString, remainingLength, '\\', collectedChars... >"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string__maker_3_01_t_source_string_00_01remaining_length_00_01'_0c_0c'_00_01collected_chars_8_8_8_01_4.html#a6ae553bc191f08f7bbb3784013d2fa77"><param name="Name" value="ArduinoTrace::string_maker< TSourceString, remainingLength, '\\', collectedChars... >"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string__maker.html#ab92390cc49ef71d83b31138b1fb826cc"><param name="Name" value="ArduinoTrace::string_maker"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_arduino_trace.html"><param name="Name" value="ArduinoTrace"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_arduino_trace.html#a050c8048ae191aa56c00543c27c14e46"><param name="Name" value="make_string"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_arduino_trace.html#a3089af7d454fda5903dc27fbdba9c4ff"><param name="Name" value="ArduinoTrace"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#ac8988ab2b13f65847fed00d60ae33ea4"><param name="Name" value="ARDUINOTRACE_CONCAT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a86732f6c8210f80d349b07e7bdeaf3df"><param name="Name" value="ARDUINOTRACE_DUMP"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#aed3cf71100dda548bbd534985d7192f3"><param name="Name" value="ARDUINOTRACE_DUMP_PREFIX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a7d1e70fad00890cc5357465f9527169d"><param name="Name" value="ARDUINOTRACE_DUMP_SHORT_PREFIX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a7d69379e3b326b08e91fb560b71080bf"><param name="Name" value="ARDUINOTRACE_DUMPL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a167f7a061eff0ef1a8c793cd5e9b97f6"><param name="Name" value="ARDUINOTRACE_DUMPS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#ad7d0bbb88c8be211a6af1cc5534f8158"><param name="Name" value="ARDUINOTRACE_ENABLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#ad4e0df95e9ee3dde1d6398cd51f13c49"><param name="Name" value="ARDUINOTRACE_ENABLE_FULLPATH"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a5dcb87b871adbd4cd1f46800b4778b99"><param name="Name" value="ARDUINOTRACE_ENABLE_PROGMEM"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a36031b7f07a82a5bbe37461033c6d633"><param name="Name" value="ARDUINOTRACE_EXTERN_STRING"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a36031b7f07a82a5bbe37461033c6d633"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a36031b7f07a82a5bbe37461033c6d633"><param name="Name" value="ARDUINOTRACE_EXTERN_STRING"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a87f3289f2c0a4cff1d92a2382ce89ee1"><param name="Name" value="ARDUINOTRACE_FLASHIFY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#ad2e326e72948915af376c068db67c08a"><param name="Name" value="ARDUINOTRACE_FUNC"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#ad2e326e72948915af376c068db67c08a"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#ad2e326e72948915af376c068db67c08a"><param name="Name" value="ARDUINOTRACE_FUNC"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a744fcf1cd761a885925e361b6cdb5a86"><param name="Name" value="ARDUINOTRACE_FUNCTION_NAME"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a5cef6cd5f4a16a34e01756a752bbc1f3"><param name="Name" value="ARDUINOTRACE_FUNCTION_NAME_IN_FLASH"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a91257c6f9def5edcf3ff863b6e445648"><param name="Name" value="ARDUINOTRACE_INIT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#af8f2575c80737b4af1f759c4d69ea46e"><param name="Name" value="ARDUINOTRACE_INITIALIZE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a191c22b2bcf825376d5dcca5a312e5dd"><param name="Name" value="ARDUINOTRACE_LINE"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a191c22b2bcf825376d5dcca5a312e5dd"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a191c22b2bcf825376d5dcca5a312e5dd"><param name="Name" value="ARDUINOTRACE_LINE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a361ced843bc617ab6aa98cb4487e7555"><param name="Name" value="ARDUINOTRACE_PRINT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#adb054a8888d82560aefa791fa5b58305"><param name="Name" value="ARDUINOTRACE_PRINTF"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a8cf7a62ec7e370d93b81279cd7d5518d"><param name="Name" value="ARDUINOTRACE_PRINTL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a9e6a49dbd9c31949902f01efbd30f176"><param name="Name" value="ARDUINOTRACE_PRINTV"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a5f11e423ab62461d873f31287a8128ae"><param name="Name" value="ARDUINOTRACE_SERIAL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a0ec57eea499deee5c360703df020bccd"><param name="Name" value="ARDUINOTRACE_STRINGIFY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a652d570a7c8704aa1ae5a4e191a533b3"><param name="Name" value="ARDUINOTRACE_TRACE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#ac998889a29006837ae124d2ba6d8e7a0"><param name="Name" value="ARDUINOTRACE_TRACE_PREFIX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a261e820c55d802f98eea6b6b20650c34"><param name="Name" value="ARDUINOTRACE_TRACE_SHORT_PREFIX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a3dc67fbd675476d56b749181424449d7"><param name="Name" value="ARDUINOTRACE_TRACEF"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#ae675146672beef2c828f3a1eb05fcfbd"><param name="Name" value="ARDUINOTRACE_TRACEL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_arduino_trace_8h.html#a6b5cc0d1c296979a2a04a4a9f23c3f5a"><param name="Name" value="ARDUINOTRACE_TRACES"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a0f5393972d4ff63fd8631012af82b73e"><param name="Name" value="ARDUINOTRACE_VAR"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a0f5393972d4ff63fd8631012af82b73e"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a0f5393972d4ff63fd8631012af82b73e"><param name="Name" value="ARDUINOTRACE_VAR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a4163b4a4e9d8f2949741962dca6c5944"><param name="Name" value="ARRAY_SIZE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="menu__serial_8h.html#a21b77b35b4899d67672a266e2d8951f4"><param name="Name" value="at_srFunc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a6d235996e503bdc8584edc3c0292cdb8"><param name="Name" value="boot_device"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html"><param name="Name" value="boot_flags"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html"><param name="Name" value="boot_flags"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#a786ec93db8d4c2b1286c4989a8b58a25"><param name="Name" value="bootdevice_flash"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html"><param name="Name" value="boot_flags"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#af8b014da7c192f21c87a705139fa1459"><param name="Name" value="bootdevice_ram"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html"><param name="Name" value="boot_flags"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#a1ac8cd9b7e163d32355cb1458d53f79a"><param name="Name" value="raw_bootdevice"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html"><param name="Name" value="boot_flags"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#a6239f4d39e98c4899e093f9ab85015e8"><param name="Name" value="raw_bootmode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html"><param name="Name" value="boot_flags"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#ab9f2772bfda3eb759602cf08e159ff03"><param name="Name" value="raw_rst_cause"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html"><param name="Name" value="boot_flags"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#ac4200b418579aea9061f2a480def6ed2"><param name="Name" value="rst_normal_boot"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html"><param name="Name" value="boot_flags"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#a6ecbe67a0be3bcc010a60f2f504f1db4"><param name="Name" value="rst_reset_pin"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#ad3a7e78e4080f72816a468b34a41d8e1"><param name="Name" value="boot_flags"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#a786ec93db8d4c2b1286c4989a8b58a25"><param name="Name" value="bootdevice_flash"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#af8b014da7c192f21c87a705139fa1459"><param name="Name" value="bootdevice_ram"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a73580b8103bfc5fbe8e0d35b90e9a4de"><param name="Name" value="bootmode_detect"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#acb67ed535bc7df30360efe14e23e03df"><param name="Name" value="ch_toString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#acb67ed535bc7df30360efe14e23e03df"><param name="Name" value="adri_toolsV2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#aa10fbc6021a6d765a2ac5bebfdb7e964"><param name="Name" value="ch_toString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a2025af95d28e8440a8ab39f2c20b0b31"><param name="Name" value="cmd_3"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#ad6aaa7aa50526a937b968eccb1d6a6c4"><param name="Name" value="cmd_4"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a886a35a176cab7b9bca8d5e9b783305f"><param name="Name" value="cmd_array"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a28f60b235a6174d826374f63c523ed5a"><param name="Name" value="cmd_item_add"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a11973381a212f34c38f3d1b708621b39"><param name="Name" value="adri_toolsv2_ptr"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#ab168251e0feaf91acd5dd8882d823a4d"><param name="Name" value="adri_toolsv2_trace"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a2b69a357d9a2272f5e1839ab22a1b27d"><param name="Name" value="adri_toolsv2Ptr_get"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a2f7ab7774d5cdeee83f2aee9e977bfe9"><param name="Name" value="adriTools_ch_cr"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a73d78c4550a8dd56b8f1cf0734cc60b3"><param name="Name" value="adriTools_PrBuffer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a5bb6d14afdbe82fa08a019f89ea84d88"><param name="Name" value="adriTools_print"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a6edb4e03cc241f618ebf0937e83979d4"><param name="Name" value="adriTools_printLn"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a36031b7f07a82a5bbe37461033c6d633"><param name="Name" value="ARDUINOTRACE_EXTERN_STRING"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#ad2e326e72948915af376c068db67c08a"><param name="Name" value="ARDUINOTRACE_FUNC"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a191c22b2bcf825376d5dcca5a312e5dd"><param name="Name" value="ARDUINOTRACE_LINE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a0f5393972d4ff63fd8631012af82b73e"><param name="Name" value="ARDUINOTRACE_VAR"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a73580b8103bfc5fbe8e0d35b90e9a4de"><param name="Name" value="bootmode_detect"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#acab7f5994b6974eb2023c1971561e0c9"><param name="Name" value="FLASH_SIZE_MAP_NAMES"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#ab3b468dff4c87a1c69e32df5601d0ef2"><param name="Name" value="fs"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a81fa8cd6a66d3dda5200456e078f05e6"><param name="Name" value="fs"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#ac8de606ee0017dcc2691e01e53d0e874"><param name="Name" value="fs"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a58553a349b33836e0a1b0eb7f2f182ad"><param name="Name" value="fs"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#af149d1f6f5f2093cbe71d7b8c8de8697"><param name="Name" value="fs"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a35552f62f7316edf0a808e78603d7cb1"><param name="Name" value="fs"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a4fbe20f57674012b5315bea7a8ae3a33"><param name="Name" value="fs"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a9beca7eca148b40838d274a0a69162f6"><param name="Name" value="fs"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#afbf314187af5cc45b152f613befbb44f"><param name="Name" value="fs"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#aa1cae4630cb56feeb652324db9230419"><param name="Name" value="fs"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#ab378214285e5ec8262935520e2c79775"><param name="Name" value="fs"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html"><param name="Name" value="core.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a23ec96641b60ba3cf148708d938aab74"><param name="Name" value="fs"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a4793abeb5fd5b67a8295220ee8b96942"><param name="Name" value="core.cpp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#ae355cc14ef5a048f21d283957b5d20cc"><param name="Name" value="_telnet_get"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a62f7b519c5e36e9ffb7269a12f1a071e"><param name="Name" value="_telnet_loop"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a5e84a945c06e6be0d54b678ea84d9da6"><param name="Name" value="_telnet_put"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a1368614534a0ccee98b06f29284e83aa"><param name="Name" value="_telnet_setup"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#aa91be1ece4dfbcf8ae21abd6a613beb3"><param name="Name" value="ADRI_LOG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#ab6ad7858b79a2c682a9b9e64ac34793e"><param name="Name" value="adri_log_"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#aad1f9b13e82ebc3cd6593e6eadc374f1"><param name="Name" value="adri_log_f"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a843deab2e771afa4330966569793ebef"><param name="Name" value="adri_log_v"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a6e3181be2119b5376a986c676af73d2f"><param name="Name" value="ADRI_LOGP"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#aba33f5c5b5a2e8d1e2f8b4c3ae7128d5"><param name="Name" value="ADRI_LOGV"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a2b69a357d9a2272f5e1839ab22a1b27d"><param name="Name" value="adri_toolsv2Ptr_get"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a2f7ab7774d5cdeee83f2aee9e977bfe9"><param name="Name" value="adriTools_ch_cr"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#ad20089a8eccaa30291a4b68c73363327"><param name="Name" value="adriTools_PrBuffer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#aa09d3f2e944f865b05880484844691a9"><param name="Name" value="adriTools_print"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a6edb4e03cc241f618ebf0937e83979d4"><param name="Name" value="adriTools_printLn"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a36031b7f07a82a5bbe37461033c6d633"><param name="Name" value="ARDUINOTRACE_EXTERN_STRING"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#ad2e326e72948915af376c068db67c08a"><param name="Name" value="ARDUINOTRACE_FUNC"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a191c22b2bcf825376d5dcca5a312e5dd"><param name="Name" value="ARDUINOTRACE_LINE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a0f5393972d4ff63fd8631012af82b73e"><param name="Name" value="ARDUINOTRACE_VAR"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a4163b4a4e9d8f2949741962dca6c5944"><param name="Name" value="ARRAY_SIZE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#aaf23acf66f52e0622599e1ca1facfc24"><param name="Name" value="esp_log_printf_"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html"><param name="Name" value="core.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a9cc6f87bd880a00de9e556e557dc925c"><param name="Name" value="esp_log_printf_"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a824957566738f5e5a91c90958d227583"><param name="Name" value="core.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string.html#a64f17f35e167bae5f61b064792ef9d65"><param name="Name" value="data"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#af6a388286c832ca15a77c41a58667690"><param name="Name" value="ended"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#a734579b908509b57151ac02b946056d1"><param name="Name" value="EOP"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a41be71f5e6a3fa986920b81ea0b840b4"><param name="Name" value="ESP_boot_info"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#ab769e8ed019f544d4e3bb9b0da53d27e"><param name="Name" value="ESP_core_info"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a5401e04d858d66416f348c1a18f3901e"><param name="Name" value="ESP_flash_info"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a78d70cc9c535c61c31b5c8ca484a0ef3"><param name="Name" value="esp_log_print_lines"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a9cc6f87bd880a00de9e556e557dc925c"><param name="Name" value="esp_log_printf_"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a9cc6f87bd880a00de9e556e557dc925c"><param name="Name" value="core.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a824957566738f5e5a91c90958d227583"><param name="Name" value="esp_log_printf_"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#a824957566738f5e5a91c90958d227583"><param name="Name" value="core.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#aaf23acf66f52e0622599e1ca1facfc24"><param name="Name" value="esp_log_printf_"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8h.html#aaf23acf66f52e0622599e1ca1facfc24"><param name="Name" value="core.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a0c6f455f16cca42789a6b2ad2eaa3384"><param name="Name" value="esp_log_printf_"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a0c6f455f16cca42789a6b2ad2eaa3384"><param name="Name" value="logger.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#ac1a1c8b3d969008316af8cdfe48b0547"><param name="Name" value="esp_log_printf_"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#ac1a1c8b3d969008316af8cdfe48b0547"><param name="Name" value="logger.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a075c817a608dd7efedb8f9345afb5c0a"><param name="Name" value="esp_log_printf_"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a4d8f837baf4ad10ad7af569f1b9301a4"><param name="Name" value="explode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#acab7f5994b6974eb2023c1971561e0c9"><param name="Name" value="FLASH_SIZE_MAP_NAMES"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#ab3b468dff4c87a1c69e32df5601d0ef2"><param name="Name" value="fs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#ab3b468dff4c87a1c69e32df5601d0ef2"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#ac8de606ee0017dcc2691e01e53d0e874"><param name="Name" value="fs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#ac8de606ee0017dcc2691e01e53d0e874"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#af149d1f6f5f2093cbe71d7b8c8de8697"><param name="Name" value="fs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#af149d1f6f5f2093cbe71d7b8c8de8697"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a4fbe20f57674012b5315bea7a8ae3a33"><param name="Name" value="fs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a4fbe20f57674012b5315bea7a8ae3a33"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a35552f62f7316edf0a808e78603d7cb1"><param name="Name" value="fs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a35552f62f7316edf0a808e78603d7cb1"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a9beca7eca148b40838d274a0a69162f6"><param name="Name" value="fs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a9beca7eca148b40838d274a0a69162f6"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#afbf314187af5cc45b152f613befbb44f"><param name="Name" value="fs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#afbf314187af5cc45b152f613befbb44f"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#aa1cae4630cb56feeb652324db9230419"><param name="Name" value="fs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#aa1cae4630cb56feeb652324db9230419"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a58553a349b33836e0a1b0eb7f2f182ad"><param name="Name" value="fs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a58553a349b33836e0a1b0eb7f2f182ad"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#ab378214285e5ec8262935520e2c79775"><param name="Name" value="fs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#ab378214285e5ec8262935520e2c79775"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a23ec96641b60ba3cf148708d938aab74"><param name="Name" value="fs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a23ec96641b60ba3cf148708d938aab74"><param name="Name" value="core.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a81fa8cd6a66d3dda5200456e078f05e6"><param name="Name" value="fs"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#af2144cd7fb2f486346aa5bca3b24c711"><param name="Name" value="heap_last"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a8074ca2dd8175fb9f4b7b14359777840"><param name="Name" value="heap_monitor"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a5cacce0dfe4cf7f8d505429769e3e986"><param name="Name" value="heap_monitorLoop"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#af791a67f2e717272a38de002c1e929e0"><param name="Name" value="heap_monitorToggle"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a1289f2f2ab2a61fc9a09254063f01fc7"><param name="Name" value="heap_print"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a44c707247a51714f95806ac87c6c0d1d"><param name="Name" value="heap_start"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a897a8a2acff3f104a08cf0f798d194b3"><param name="Name" value="heap_string"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#ab75d7cb3d9551dc2851b580ea3e095ad"><param name="Name" value="inData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#a3af712976523aec9b74e48c95e048343"><param name="Name" value="indexA"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a9e5571ca7c5450da7bfc8a1e9c656119"><param name="Name" value="info_parm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1_initializer.html#a46551cb41e120f2d7d095655add61f66"><param name="Name" value="Initializer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#aa93dbca6608a4cbc9633918bfcf6ef4f"><param name="Name" value="ip2string"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html#a474a7d6ba4c8f010f7a2255defca8aec"><param name="Name" value="item_add"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a9041deb22a1c7ed89f95f0d227436a22"><param name="Name" value="jsonAddIntValue"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a9041deb22a1c7ed89f95f0d227436a22"><param name="Name" value="adri_toolsV2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#aed63f7efb8d33690972d75fbd2ff89ef"><param name="Name" value="jsonAddIntValue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#aa347446f0543b0db9cedb2706cfa5a62"><param name="Name" value="jsonAddStringsValue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#af30578cfd2803dce38c2933c1d8ae1d9"><param name="Name" value="literal_item"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a570685e6722c39733765a20a87a272c5"><param name="Name" value="literal_value"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#ac26abc72f088286e16d7d6cf1d48c20b"><param name="Name" value="log_filePath"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#aaaec68e2497a034306db0ae801cac6de"><param name="Name" value="log_filePath_set"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#ac1c9321e57d8b158638b3f0d873f9a22"><param name="Name" value="log_read"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#ad35d57c21b428d242cc172a5002718f1"><param name="Name" value="log_write"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#ad35d57c21b428d242cc172a5002718f1"><param name="Name" value="adri_toolsV2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a1f2d94f3c8edd3962fed6a712fff1d04"><param name="Name" value="log_write"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html"><param name="Name" value="logger.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#aa7d37f1fff78d5fcb88dc2756c9a1def"><param name="Name" value="adriLogger_buffer1"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html"><param name="Name" value="logger.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a93c503c8e3fd8721385e7f99c1ebf9c7"><param name="Name" value="adriToolLogger_serialMenu_cmd"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html"><param name="Name" value="logger.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a7993b80853348dd107e600f44136305e"><param name="Name" value="adriToolLogger_serialMenu_region"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html"><param name="Name" value="logger.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a5999f850d0c87d3a22811b50a825d734"><param name="Name" value="adriToolLogger_serialMenu_regionAddLine"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html"><param name="Name" value="logger.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a7a82ed377568d9d18fe3c64c0338345c"><param name="Name" value="adriToolLogger_serialMenu_regionSerialPrint"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html"><param name="Name" value="logger.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#ae014540fdb397dfc87b409a345e81360"><param name="Name" value="adriTools_logger_ptr"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html"><param name="Name" value="logger.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#ab531df7c4434211479c7647d94841074"><param name="Name" value="adriTools_logger_ptrGet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html"><param name="Name" value="logger.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a78d70cc9c535c61c31b5c8ca484a0ef3"><param name="Name" value="esp_log_print_lines"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html"><param name="Name" value="logger.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#ac1a1c8b3d969008316af8cdfe48b0547"><param name="Name" value="esp_log_printf_"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html"><param name="Name" value="logger.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a0c6f455f16cca42789a6b2ad2eaa3384"><param name="Name" value="esp_log_printf_"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8cpp.html#a075c817a608dd7efedb8f9345afb5c0a"><param name="Name" value="logger.cpp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8h.html"><param name="Name" value="logger.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8h.html#a93c503c8e3fd8721385e7f99c1ebf9c7"><param name="Name" value="adriToolLogger_serialMenu_cmd"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8h.html"><param name="Name" value="logger.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8h.html#a7993b80853348dd107e600f44136305e"><param name="Name" value="adriToolLogger_serialMenu_region"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8h.html"><param name="Name" value="logger.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8h.html#a5999f850d0c87d3a22811b50a825d734"><param name="Name" value="adriToolLogger_serialMenu_regionAddLine"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8h.html"><param name="Name" value="logger.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8h.html#a7a82ed377568d9d18fe3c64c0338345c"><param name="Name" value="adriToolLogger_serialMenu_regionSerialPrint"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="logger_8h.html#ab531df7c4434211479c7647d94841074"><param name="Name" value="logger.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a0aed4cd545a821664a18546986c1cebf"><param name="Name" value="loop"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a0aed4cd545a821664a18546986c1cebf"><param name="Name" value="adri_toolsV2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#aed260139cd339ef075778f0189eb0592"><param name="Name" value="loop"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_arduino_trace.html#a050c8048ae191aa56c00543c27c14e46"><param name="Name" value="make_string"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_arduino_trace.html#a050c8048ae191aa56c00543c27c14e46"><param name="Name" value="ArduinoTrace"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_arduino_trace.html#a050c8048ae191aa56c00543c27c14e46"><param name="Name" value="make_string"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a829a4d46c0878cfb933843edf6d87e7f"><param name="Name" value="menu"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="menu__serial_8cpp.html"><param name="Name" value="menu_serial.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="menu__serial_8cpp.html#a4d8df1887f2e2e933d44f2b815ee96ed"><param name="Name" value="adriToolsv2_serialRead_ptr"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="menu__serial_8cpp.html#a9ea619b46547442c6d88d2fcf6af126a"><param name="Name" value="menu_serial.cpp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="menu__serial_8h.html"><param name="Name" value="menu_serial.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="menu__serial_8h.html#a9ea619b46547442c6d88d2fcf6af126a"><param name="Name" value="adriToolsv2_serialReadPtr_get"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="menu__serial_8h.html#a21b77b35b4899d67672a266e2d8951f4"><param name="Name" value="menu_serial.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a7464eb6c4402dd9eb25b4d72b4d5f2df"><param name="Name" value="on_time"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a7464eb6c4402dd9eb25b4d72b4d5f2df"><param name="Name" value="adri_toolsV2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a2afe642429d0f957bc5441e652a8e1a8"><param name="Name" value="on_time"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1_printer.html#ac81b50c96db0f870407067dd4d955a14"><param name="Name" value="Printer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#aeb305d3ce0a17302821148ea83d1f5b5"><param name="Name" value="printer_display"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ab5e3f047773f080002abac74bab07481"><param name="Name" value="printer_display_lvl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#aea9f08d7307f737d069ddbb7e5b30d7a"><param name="Name" value="printer_display_lvl_set"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a3bd7b04b83b72964a355e5bcd6d9fc10"><param name="Name" value="printer_display_toggle"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a2fe5b72abc4da73a5b561501410af47d"><param name="Name" value="printer_displayMod"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#aaebe1820509a1bc5a2b324e4ecb61e27"><param name="Name" value="printer_heap"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#aa3779b47d448c2046176f274914d234d"><param name="Name" value="printer_heap_toggle"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a7dad8dab07a00f2bf3aa98d720c40072"><param name="Name" value="printer_serial"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ab8bb810a5266771170506af71848b7fc"><param name="Name" value="printer_timestamp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a261e1507cd96ea83296eb788c46b91c7"><param name="Name" value="printer_timestamp_toggle"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1_printer_d.html#aeb61a56d9c752328d1ceecf9b43da182"><param name="Name" value="PrinterD"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1_printer_f.html#a65495d0c8a76b03bc998b44101fbd4a0"><param name="Name" value="PrinterF"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1_printer_l.html#ac9e222436552f7d39b8fc4b0f2f266d2"><param name="Name" value="PrinterL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#a1ac8cd9b7e163d32355cb1458d53f79a"><param name="Name" value="raw_bootdevice"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#a6239f4d39e98c4899e093f9ab85015e8"><param name="Name" value="raw_bootmode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#ab9f2772bfda3eb759602cf08e159ff03"><param name="Name" value="raw_rst_cause"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a9f90a29ffca29c0b4899c89e722395af"><param name="Name" value="read"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a840bdefab4b7ae7f9b725dbb49b66641"><param name="Name" value="reset_cause"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string__maker.html#ab92390cc49ef71d83b31138b1fb826cc"><param name="Name" value="result"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string__maker.html#ab92390cc49ef71d83b31138b1fb826cc"><param name="Name" value="ArduinoTrace::string_maker"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string__maker_3_01_t_source_string_00_010_00_01collected_chars_8_8_8_01_4.html#ae0faa352a6ec3bd13fa60fe6b7db172b"><param name="Name" value="result"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string__maker_3_01_t_source_string_00_010_00_01collected_chars_8_8_8_01_4.html#ae0faa352a6ec3bd13fa60fe6b7db172b"><param name="Name" value="ArduinoTrace::string_maker< TSourceString, 0, collectedChars... >"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string__maker_3_01_t_source_string_00_01remaining_length_00_01'_2'_00_01collected_chars_8_8_8_01_4.html#a1877a49d6dd48a5dc131a40304c50a5e"><param name="Name" value="result"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string__maker_3_01_t_source_string_00_01remaining_length_00_01'_2'_00_01collected_chars_8_8_8_01_4.html#a1877a49d6dd48a5dc131a40304c50a5e"><param name="Name" value="ArduinoTrace::string_maker< TSourceString, remainingLength, '/', collectedChars... >"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_arduino_trace_1_1string__maker_3_01_t_source_string_00_01remaining_length_00_01'_0c_0c'_00_01collected_chars_8_8_8_01_4.html#a6ae553bc191f08f7bbb3784013d2fa77"><param name="Name" value="result"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#ac4200b418579aea9061f2a480def6ed2"><param name="Name" value="rst_normal_boot"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="core_8cpp.html#a4793abeb5fd5b67a8295220ee8b96942"><param name="Name" value="RST_REASONS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#a6ecbe67a0be3bcc010a60f2f504f1db4"><param name="Name" value="rst_reset_pin"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structboot__flags.html#ad3a7e78e4080f72816a468b34a41d8e1"><param name="Name" value="rst_watchdog"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a11f42d2aaedc8653ca182a33916ec580"><param name="Name" value="seconds2time"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a0b5a64d32e27c5f368b40c913b019330"><param name="Name" value="serial_menu"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a8fec172a8cafbfba0d8ce38659fdf5db"><param name="Name" value="seriealPrint_otherRegion"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ae825acefc5a05fb4cee2a2da0e8eeab2"><param name="Name" value="seriealPrint_otherRegion_toggle"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#aca4b4a1895b8640f925648aec3c406dd"><param name="Name" value="SOP"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a7e4c0281b1bfd0e595ac1016450d15ca"><param name="Name" value="spiff_addLine"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a603f59a428a542e5625f916fbf732124"><param name="Name" value="spiff_addLine_otherRegion"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a9f79425a20e46a4bfaea9a5418cf8ee4"><param name="Name" value="spiff_addLine_otherRegion_toggle"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ac01d521db0f9631e1fed4ce094364123"><param name="Name" value="spiff_fileName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ab45b75e872a3a465e2347a55482426dc"><param name="Name" value="spiff_folder"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ae2e25e471b06fcad73846c2924917fb9"><param name="Name" value="spiff_get"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ad9c51e26a69dacca73d01b56e13dbc8c"><param name="Name" value="spiff_readCurrent"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a28ce63ce7119940db3cacff713dd8518"><param name="Name" value="spiff_removeCurrent"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a5e38c01f31603c4946182ecec0d5ea57"><param name="Name" value="spiff_sav"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a3f41a4a74afb66d7020c3aad3deb9795"><param name="Name" value="spiff_setup"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#af88ba93a4dde4a11b3cff65be5f4dbb4"><param name="Name" value="spiff_toggle"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a6fd3e6a951988aea8b36ce65bffed930"><param name="Name" value="SPIFFS_printFiles"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#a4f324f750c620a3e948eafaa0e1e4860"><param name="Name" value="splitText"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#a43c08d193d555a2b2a61c53d2a4e5a63"><param name="Name" value="started"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#ac70f902f0c5850ba337fc0ecb382889e"><param name="Name" value="statu"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#adfee290344d9b55f773edd8228b339f4"><param name="Name" value="statuAddLine"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#ad1b3e3d7285dc28df29c3e4aa222d2f0"><param name="Name" value="statuSerialPrint"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a11e74723a92a6cf90fef0bbf4f688220"><param name="Name" value="strContains"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#af341566573d64aa9c74cc76d8d5bac40"><param name="Name" value="string2ip"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_arduino_trace.html#a3089af7d454fda5903dc27fbdba9c4ff"><param name="Name" value="strlen"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_arduino_trace.html#a3089af7d454fda5903dc27fbdba9c4ff"><param name="Name" value="ArduinoTrace"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_arduino_trace.html#a3089af7d454fda5903dc27fbdba9c4ff"><param name="Name" value="strlen"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html"><param name="Name" value="telnet.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#a152eacf40601cfa5397198643b8aa88d"><param name="Name" value="adri_telenet_client"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html"><param name="Name" value="telnet.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#a0843a8ea38f629385dc7f2899829727e"><param name="Name" value="adri_telenet_server"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html"><param name="Name" value="telnet.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#af6a388286c832ca15a77c41a58667690"><param name="Name" value="ended"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html"><param name="Name" value="telnet.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#a734579b908509b57151ac02b946056d1"><param name="Name" value="EOP"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html"><param name="Name" value="telnet.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#ab75d7cb3d9551dc2851b580ea3e095ad"><param name="Name" value="inData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html"><param name="Name" value="telnet.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#a3af712976523aec9b74e48c95e048343"><param name="Name" value="indexA"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html"><param name="Name" value="telnet.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#aca4b4a1895b8640f925648aec3c406dd"><param name="Name" value="SOP"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="telnet_8cpp.html#a43c08d193d555a2b2a61c53d2a4e5a63"><param name="Name" value="telnet.cpp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__telnet.html#aee4d89006feb2b5d346ed16057400ee6"><param name="Name" value="telnet_get"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__telnet.html#a2547f10200724a9e771ee33df715825a"><param name="Name" value="telnet_loop"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__telnet.html#aec35ce286c2a2deea2f8a0a5519bdeb7"><param name="Name" value="telnet_put"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__telnet.html#a2c563b5f9787e9683b479862604fc60c"><param name="Name" value="telnet_setup"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a43df8c712c1b24e228c4f406a4a816c8"><param name="Name" value="tempStr_get"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a43df8c712c1b24e228c4f406a4a816c8"><param name="Name" value="adri_toolsV2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a8d549d7730edcc1f7eb50b9a1eb02c8b"><param name="Name" value="tempStr_get"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#adb5c487191baeaba9deb605b104a2606"><param name="Name" value="tempStr_print"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#acf86359b7495715e5015849faaeac518"><param name="Name" value="tempStr_sizeSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a7a492603cceba632a821e4f66c96d019"><param name="Name" value="tempStrArray"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#ae161b47a4bfc4534cde30ca8c5deadd8"><param name="Name" value="tempStrArraySize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#ae07ce5b41217b60db13f757abf1593fd"><param name="Name" value="timeStamp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#a05688bf23fa466a48a15ac67399b51a9"><param name="Name" value="toggle"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#a9d9b9a2a27ae08a428b4df36527ef9cb"><param name="Name" value="toggleAddLine"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger__variables.html#a7afc400baa67935a0c23bb718b24bc82"><param name="Name" value="toggleSerialPrint"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri__tools_v2.html#a85632dfa6be805aa7bb0c55abff09189"><param name="Name" value="~adri_toolsV2"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_tools__logger.html#a41fd628081d473436f2f57cc3d1a0dec"><param name="Name" value="~adriTools_logger"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read.html#ab1c7daff46a07332af18b10eebf65ddc"><param name="Name" value="~adriToolsv2_serialRead"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadri_toolsv2__serial_read_item.html#a33cd2cbc1b45aa7626cafa0d46003e72"><param name="Name" value="~adriToolsv2_serialReadItem"></OBJECT>
+</UL>
+</BODY>
+</HTML>

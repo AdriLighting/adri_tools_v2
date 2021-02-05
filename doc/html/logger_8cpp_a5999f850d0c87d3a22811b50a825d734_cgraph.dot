@@ -1,0 +1,14 @@
+digraph "adriToolLogger_serialMenu_regionAddLine"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="adriToolLogger_serialMenu\l_regionAddLine",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="fonction pour le keyboard, active/desactive \"littlefs\" pour la region voullue"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="adriTools_logger::activate\lByVariable_toggleAddLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger.html#a8290413f677d6d9cbeb2039204bd5271",tooltip="active/desactive \"littlefs\" pour la region voullue"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="adriTools_logger_variables\l::toggleAddLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger__variables.html#a9d9b9a2a27ae08a428b4df36527ef9cb",tooltip="active/desactive \"LITTLEFS\""];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="adriTools_logger_ptrGet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$logger_8cpp.html#ab531df7c4434211479c7647d94841074",tooltip="ptr ver la dernierre instance de la classe \"adriTools_logger\""];
+}

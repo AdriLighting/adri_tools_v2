@@ -1,0 +1,4 @@
+var struct_arduino_trace_1_1string__maker_3_01_t_source_string_00_01remaining_length_00_01'_0c_0c'_00_01collected_chars_8_8_8_01_4 =
+[
+    [ "result", "struct_arduino_trace_1_1string__maker_3_01_t_source_string_00_01remaining_length_00_01'_0c_0c'_00_01collected_chars_8_8_8_01_4.html#a6ae553bc191f08f7bbb3784013d2fa77", null ]
+];

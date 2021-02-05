@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-	#define ADRIOTOOLS_USETELNET
+	// #define ADRIOTOOLS_USETELNET
 
 #include <adri_tools_v2.h>
 
@@ -162,14 +162,15 @@ void setup()
     _serial->cmd_item_add(	1, 	"freeHeap",			"e",	"", 	_serial_freeHeap);
     _serial->cmd_item_add(	1, 	"freeHeapMonitor",	"r",	"", 	_serial_freeHeapToggle);
     _serial->cmd_item_add(	1, 	"print_log",		"t",	"", 	_serial_print_log);
-    _serial->cmd_item_add(	1, 	"toggle trace",		"y",	"", 	_serial_adriTrace);
     _serial->cmd_item_add(	1, 	"print spiff",		"u",	"", 	_serial_print_Spiff);
 
 // 							array 2/2	taille
     _serial->cmd_array(		2, 			2); 
 //												!touche=value 	return 	function
-    _serial->cmd_item_add(2, "serial_value",	"a", 			"", 	_serial_value);
-    _serial->cmd_item_add(2, "serial_logger",	"q", 			"", 	_serial_logger);
+    _serial->cmd_item_add(2, "loggerRegion",		"q",		"", 	adriToolLogger_serialMenu_region);
+    _serial->cmd_item_add(2, "logger_regionAddLine","s",		"", 	adriToolLogger_serialMenu_regionAddLine);
+    _serial->cmd_item_add(2, "logger_regionSerial",	"d",		"", 	adriToolLogger_serialMenu_regionSerialPrint);
+    _serial->cmd_item_add(2, "logger",				"e",		"", 	adriToolLogger_serialMenu_cmd);  
 
 // 							&cmd=value  display name	function  							
     _serial->cmd_3( (char*)"&", 		"parse", 		_serial_parse);
@@ -227,50 +228,8 @@ String _serial_print_Spiff(String cmd, String value){
 	_tools->SPIFFS_printFiles("");
     return "";
 }
-String _serial_adriTrace(String cmd, String value){
-	adri_toolsv2_trace =! adri_toolsv2_trace;
-	fsprintfv(adri_toolsv2_trace, "\n[adri_toolsv2_trace]\n");
-	return "";
-}
-String _serial_value(String cmd, String value){
-	ADRI_LOG(0, 0, 2,"","");
-	ADRI_LOG(0, 2, 2, "cmd: %s - value: %S", cmd.c_str(), value.c_str());	
-	int pos = value.toInt();
-	switch (pos) {
-	    case 0:
-	    	ADRI_LOG(0,3,2,"case 0","");
-	    	_looger->activateByVariable_toggle(0);
-			break;
-		default: ADRI_LOG(0,3,2,"default",""); break;
-	}
-	ADRI_LOG(0, 1, 2,"","");
-	return "";
-}
 
-String _serial_logger(String cmd, String value){
-	ADRI_LOG(-1, 0, 2,"","");
-	ADRI_LOG(-1, 2, 2, "cmd: %s - value: %S", cmd.c_str(), value.c_str());	
-	int pos = value.toInt();
-	if (value == "a") {
-		_looger->serial_menu();
-	} else if (value == "z") {
-		_looger->printer_display_toggle();
-	} else if (value == "e") {
-		_looger->printer_heap_toggle();
-	} else if (value == "r") {
-		_looger->printer_timestamp_toggle();
-	} else if (value == "t") {
-		_looger->spiff_toggle();
-	} else if (value == "y") {
-		_looger->spiff_readCurrent();
-	} else if (value == "u") {
-		_looger->spiff_removeCurrent();
-	} else {
-		_looger->printer_display_lvl_set(pos);	
-	}
-	ADRI_LOG(-1, 1, 2,"","");
-	return "";
-}
+
 String _serial_parse(String cmd, String value){
 	fsprintf("\n[_serial_parse] cmd: %s - value: %S\n", cmd.c_str(), value.c_str());
 	return "";

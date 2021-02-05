@@ -1,0 +1,24 @@
+digraph "adriTools_logger::adriTools_logger"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="adriTools_logger::adriTools\l_logger",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="constructor"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="adriTools_logger::spiff\l_setup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger.html#a3f41a4a74afb66d7020c3aad3deb9795",tooltip="initialize le fichier log"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="adri_toolsv2Ptr_get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core_8cpp.html#a2b69a357d9a2272f5e1839ab22a1b27d",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="adri_toolsV2::ESP_boot_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri__tools_v2.html#a41be71f5e6a3fa986920b81ea0b840b4",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="adri_toolsV2::boot\l_device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri__tools_v2.html#a6d235996e503bdc8584edc3c0292cdb8",tooltip=" "];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="bootmode_detect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core_8cpp.html#a73580b8103bfc5fbe8e0d35b90e9a4de",tooltip=" "];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="adri_toolsV2::info_parm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri__tools_v2.html#a9e5571ca7c5450da7bfc8a1e9c656119",tooltip=" "];
+  Node4 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="adri_toolsV2::reset\l_cause",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri__tools_v2.html#a840bdefab4b7ae7f9b725dbb49b66641",tooltip=" "];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="adriTools_logger::spiff\l_addLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger.html#a7e4c0281b1bfd0e595ac1016450d15ca",tooltip="ajoute un ligne au fichier log"];
+}

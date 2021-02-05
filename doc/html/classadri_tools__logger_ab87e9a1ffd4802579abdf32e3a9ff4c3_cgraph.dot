@@ -1,0 +1,10 @@
+digraph "adriTools_logger::activateByVariable_statuSerialPrint"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="adriTools_logger::activate\lByVariable_statuSerialPrint",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="obtenir si la region peut \"printf\""];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="adriTools_logger_variables\l::statuSerialPrint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger__variables.html#ad1b3e3d7285dc28df29c3e4aa222d2f0",tooltip="get the value of _serial"];
+}

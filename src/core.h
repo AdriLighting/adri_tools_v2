@@ -68,6 +68,16 @@
 	  	esp_log_printf_(parm_e, parm_d, parm_c, parm_b, ARDUINOTRACE_LINE, ARDUINOTRACE_FUNC, adriTools_PrBuffer) 
 
 	#define ADRI_LOGV(parm_e, parm_d, parm_c, parm_b, parm_a, ...) adri_log_v(parm_e, parm_d, parm_c, parm_b, parm_a, __VA_ARGS__)
+/**
+ * @brief      printf
+ *
+ * @param      parm_d  region
+ * @param      parm_c  lvl
+ * @param      parm_b  trace
+ * @param      parm_a  param
+ * @param      ...     args
+ * @return     { description_of_the_return_value }
+ */
 	#define ADRI_LOG(parm_d, parm_c, parm_b, parm_a, ...) adri_log_(parm_d, parm_c, parm_b, parm_a, __VA_ARGS__)
 	#define ADRI_LOGP(parm_e, parm_d, parm_c, parm_b, parm_a, ...) adri_log_f(parm_e, parm_d, parm_c, parm_b, parm_a, __VA_ARGS__)
 

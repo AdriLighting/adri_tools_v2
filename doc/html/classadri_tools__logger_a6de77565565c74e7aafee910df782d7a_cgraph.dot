@@ -1,0 +1,10 @@
+digraph "adriTools_logger::activateByVariable_stau"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="adriTools_logger::activate\lByVariable_stau",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="obtenir si la region peut \"printf\" et \"littlefs\""];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="adriTools_logger_variables\l::statu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger__variables.html#ac70f902f0c5850ba337fc0ecb382889e",tooltip="get the value of _state"];
+}

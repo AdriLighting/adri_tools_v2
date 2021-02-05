@@ -1,0 +1,14 @@
+digraph "adriToolLogger_serialMenu_region"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="adriToolLogger_serialMenu\l_region",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="fonction pour le keyboard, active/desactive totalement la region voullu"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="adriTools_logger::activate\lByVariable_toggle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger.html#a1d80d7eea79fdef03e7bc6baec2b2757",tooltip="active/desactive totalement la region voullu"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="adriTools_logger_variables\l::toggle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools__logger__variables.html#a05688bf23fa466a48a15ac67399b51a9",tooltip="active/desactive totalement la region"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="adriTools_logger_ptrGet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$logger_8cpp.html#ab531df7c4434211479c7647d94841074",tooltip="ptr ver la dernierre instance de la classe \"adriTools_logger\""];
+}

@@ -38,6 +38,16 @@ void adri_toolsV2::loop(){
 // region ################################################ FSPRINTF
 // ########################################################################################
 char adriTools_PrBuffer[1024];
+
+ /**
+ * @fn          { adriTools_print (String buf) }
+ * @brief       { function_description }
+ *
+ * @param[in]   path  The path
+ *
+ * @return      { description_of_the_return_value }
+ */
+
 void adriTools_print (String buf) {
     if (adri_toolsv2_ptr!=nullptr) {
         if (adri_toolsv2_ptr->_telnetPut != NULL) {
@@ -51,6 +61,8 @@ void adriTools_printLn      (String buf) {Serial.println(buf);}
 
 // region ################################################ LOG
 // ########################################################################################
+
+
 void adri_toolsV2::log_filePath_set(String ret){ADRI_LOG(-1, 2, 2, "", "");log_filePath = ret; }
 void adri_toolsV2::log_read(String & ret, boolean lineNbr){
     ADRI_LOG(-1, 0, 2, "", "");
