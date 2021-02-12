@@ -1,0 +1,26 @@
+digraph "adriToolsLogger::printer_serial"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="adriToolsLogger::printer\l_serial",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="fonction final pour le \"printf\" et \"littfs\""];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="adriToolsLogger::activate\lByRegion_statuAddLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools_logger.html#ab8896b040f54087175389b65a6728b59",tooltip="obtenir si la region peut \"littlefs\""];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="adriToolsLogger_region\l::statuAddLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools_logger__region.html#a9c918f36188c558f3962ad7b05e74618",tooltip="get the value of _addLine"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="adriToolsLogger::activate\lByRegion_statuSerialPrint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools_logger.html#ac72a3b5d3e752b99ec647a28160ad84e",tooltip="obtenir si la region peut \"printf\""];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="adriToolsLogger_region\l::statuSerialPrint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools_logger__region.html#a71b9ec397a6f8f1b3fb1a26b419b1be5",tooltip="get the value of _serial"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="adri_toolsv2Ptr_get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core_8cpp.html#a2b69a357d9a2272f5e1839ab22a1b27d",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="adriToolsLogger_ptrGet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$logger_8cpp.html#a116548807732c186911fa15ac1f1f5f8",tooltip="ptr ver la dernierre instance de la classe \"adriToolsLogger\""];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="adri_toolsV2::om_time",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri__tools_v2.html#a8ffd27d9bf5a5ce2bb83214b20d7ffe2",tooltip=" "];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="adri_toolsV2::millis2time",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri__tools_v2.html#ab7e3a88c1cd221c952d3f1b3ce361cc7",tooltip=" "];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="adriToolsLogger::spiff\l_addLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools_logger.html#a46271f530b5368e4acedee9498e5bb7e",tooltip="ajoute un ligne au fichier log"];
+}

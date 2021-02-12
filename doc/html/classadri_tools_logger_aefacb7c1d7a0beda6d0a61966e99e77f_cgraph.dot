@@ -1,0 +1,14 @@
+digraph "adriToolsLogger::printer_displayMod"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="adriToolsLogger::printer\l_displayMod",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="fonction pour determiner si un \"printf\" ou \"littlefs\" est possible"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="adriToolsLogger::activate\lByRegion_stau",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools_logger.html#ada10fbd813f85db561701bd26a6f1213",tooltip="obtenir si la region peut \"printf\" et \"littlefs\""];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="adriToolsLogger_region\l::statu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadri_tools_logger__region.html#a1fe47977bb8d434289edbbfc407f44b6",tooltip="get the value of _state"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="adriToolsLogger_ptrGet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$logger_8cpp.html#a116548807732c186911fa15ac1f1f5f8",tooltip="ptr ver la dernierre instance de la classe \"adriToolsLogger\""];
+}
