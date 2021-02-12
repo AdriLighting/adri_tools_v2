@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['on_5ftime_153',['on_time',['../classadri__tools_v2.html#a2afe642429d0f957bc5441e652a8e1a8',1,'adri_toolsV2::on_time()'],['../classadri__tools_v2.html#a7464eb6c4402dd9eb25b4d72b4d5f2df',1,'adri_toolsV2::on_time(long ms)']]]
+  ['ntptime_5fgettime_171',['ntpTime_getTime',['../classadri__tools_v2.html#a31d826c4af0d3cc822f8ab8c5a825e00',1,'adri_toolsV2']]],
+  ['ntptime_5ftostring_172',['ntpTime_toString',['../classadri__tools_v2.html#ab7a705302a31b92cc1509228a78563b0',1,'adri_toolsV2']]]
 ];

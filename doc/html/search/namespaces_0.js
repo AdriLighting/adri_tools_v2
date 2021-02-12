@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['arduinotrace_244',['ArduinoTrace',['../namespace_arduino_trace.html',1,'']]]
+  ['arduinotrace_267',['ArduinoTrace',['../namespace_arduino_trace.html',1,'']]]
 ];

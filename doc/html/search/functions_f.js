@@ -1,21 +1,7 @@
 var searchData=
 [
-  ['seconds2time_326',['seconds2time',['../classadri__tools_v2.html#a11f42d2aaedc8653ca182a33916ec580',1,'adri_toolsV2']]],
-  ['serial_5fmenu_327',['serial_menu',['../classadri_tools__logger.html#a0b5a64d32e27c5f368b40c913b019330',1,'adriTools_logger']]],
-  ['seriealprint_5fotherregion_5ftoggle_328',['seriealPrint_otherRegion_toggle',['../classadri_tools__logger.html#ae825acefc5a05fb4cee2a2da0e8eeab2',1,'adriTools_logger']]],
-  ['spiff_5faddline_329',['spiff_addLine',['../classadri_tools__logger.html#a7e4c0281b1bfd0e595ac1016450d15ca',1,'adriTools_logger']]],
-  ['spiff_5faddline_5fotherregion_5ftoggle_330',['spiff_addLine_otherRegion_toggle',['../classadri_tools__logger.html#a9f79425a20e46a4bfaea9a5418cf8ee4',1,'adriTools_logger']]],
-  ['spiff_5fget_331',['spiff_get',['../classadri_tools__logger.html#ae2e25e471b06fcad73846c2924917fb9',1,'adriTools_logger']]],
-  ['spiff_5freadcurrent_332',['spiff_readCurrent',['../classadri_tools__logger.html#ad9c51e26a69dacca73d01b56e13dbc8c',1,'adriTools_logger']]],
-  ['spiff_5fremovecurrent_333',['spiff_removeCurrent',['../classadri_tools__logger.html#a28ce63ce7119940db3cacff713dd8518',1,'adriTools_logger']]],
-  ['spiff_5fsetup_334',['spiff_setup',['../classadri_tools__logger.html#a3f41a4a74afb66d7020c3aad3deb9795',1,'adriTools_logger']]],
-  ['spiff_5ftoggle_335',['spiff_toggle',['../classadri_tools__logger.html#af88ba93a4dde4a11b3cff65be5f4dbb4',1,'adriTools_logger']]],
-  ['spiffs_5fprintfiles_336',['SPIFFS_printFiles',['../classadri__tools_v2.html#a6fd3e6a951988aea8b36ce65bffed930',1,'adri_toolsV2']]],
-  ['splittext_337',['splitText',['../classadri_toolsv2__serial_read.html#a4f324f750c620a3e948eafaa0e1e4860',1,'adriToolsv2_serialRead']]],
-  ['statu_338',['statu',['../classadri_tools__logger__variables.html#ac70f902f0c5850ba337fc0ecb382889e',1,'adriTools_logger_variables']]],
-  ['statuaddline_339',['statuAddLine',['../classadri_tools__logger__variables.html#adfee290344d9b55f773edd8228b339f4',1,'adriTools_logger_variables']]],
-  ['statuserialprint_340',['statuSerialPrint',['../classadri_tools__logger__variables.html#ad1b3e3d7285dc28df29c3e4aa222d2f0',1,'adriTools_logger_variables']]],
-  ['strcontains_341',['strContains',['../classadri_tools__logger.html#a11e74723a92a6cf90fef0bbf4f688220',1,'adriTools_logger']]],
-  ['string2ip_342',['string2ip',['../classadri__tools_v2.html#af341566573d64aa9c74cc76d8d5bac40',1,'adri_toolsV2']]],
-  ['strlen_343',['strlen',['../namespace_arduino_trace.html#a3089af7d454fda5903dc27fbdba9c4ff',1,'ArduinoTrace']]]
+  ['read_351',['read',['../classadri_toolsv2__serial_read.html#a9f90a29ffca29c0b4899c89e722395af',1,'adriToolsv2_serialRead']]],
+  ['region_5fend_352',['region_end',['../classadri_tools_logger.html#a3f9a2ef5b9843024a3b12836a95e74af',1,'adriToolsLogger']]],
+  ['region_5fstart_353',['region_start',['../classadri_tools_logger.html#ae05c6a0b6d0fcc23e4a09f6db4453dca',1,'adriToolsLogger']]],
+  ['reset_5fcause_354',['reset_cause',['../classadri__tools_v2.html#a840bdefab4b7ae7f9b725dbb49b66641',1,'adri_toolsV2']]]
 ];

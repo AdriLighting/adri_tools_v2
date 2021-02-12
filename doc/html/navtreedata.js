@@ -59,7 +59,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_arduino_trace_8h.html",
-"logger_8h.html#a93c503c8e3fd8721385e7f99c1ebf9c7"
+"logger_8cpp.html#a4529e30d557c06e611a8d818da319336"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

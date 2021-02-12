@@ -2,8 +2,12 @@
 
 	// #define ADRIOTOOLS_USETELNET
 
-#include <adri_tools_v2.h>
+// ADRIOTOOLS_ADVLOGGER  [freeheap:  46368] [sart: 48448 - lost:  2080]
+// ADRIOTOOLS_SOFTLOGGER [freeheap:  46872] [sart: 48512 - lost:  1640]
 
+#define ADRIOTOOLS_SOFTLOGGER 
+#include <adri_soft_logger.h>
+#include <adri_tools_v2.h>
 
 #ifdef ADRIOTOOLS_USETELNET
 	adri_telnet * _adri_telnet;
@@ -28,7 +32,8 @@
 #endif
 adri_toolsV2 			* _tools;
 adriToolsv2_serialRead 	* _serial;
-adriTools_logger 		* _looger;
+adriToolsLogger 		* _looger;
+
 
 
 // region ################################################ USER FUNCTIONS PROTOTYPE
@@ -45,19 +50,24 @@ String _serial_parse(String cmd, String value);
 void setup()
 {
 
-	String log; 					// log result
+	String log = ""; 					// log result
 	String logFile = "/log.txt";	// log filepath
 
 
 	Serial.begin(115200);
   	for(unsigned long const serialBeginTime = millis(); !Serial && (millis() - serialBeginTime > 5000); ) { }
-  	fsprintf("\n##################################################\n\n");
-
+  	Serial.println(F("\n##################################################\n\n"));
 
 
 	LittleFS.begin();
 
-	_tools = new adri_toolsV2();
+	_tools 	= new adri_toolsV2();
+	_looger = new adriToolsLogger();
+
+	#ifdef ADRIOTOOLS_ADVLOGGER
+		_looger->activateByRegion_add("example"); // exxemple for _serial_value
+	#endif
+
   	_tools->heap_print();
 
 	#ifdef ADRIOTOOLS_USETELNET
@@ -108,8 +118,9 @@ void setup()
 		_tools->_telnetSetup ();
 	#endif
 
-	_looger = new adriTools_logger();
-	_looger->activateByVariable_add("example"); // exxemple for _serial_value
+
+
+
 
 // region ################################################ ESP 
 // PRINT ESP INFOS
@@ -141,12 +152,11 @@ void setup()
 // 
 	LittleFS.remove(logFile); 			// remove log filepath
 	_tools->log_filePath_set(logFile); 	// set log filepath
-	// _tools->log_write(log, ARDUINOTRACE_EXTERN_STRING);
 	_tools->log_write(log, "mydata");
 	_tools->log_write(log, "mydata_2", "mydata_3");
 	_tools->log_read(log, true);
 	_tools->log_write(log, "mydata_4");
-	_tools->log_read(log, true);
+	_tools->log_read(log, true, -1);
 // endregion >>>> ADRILOG
 
 
@@ -164,14 +174,19 @@ void setup()
     _serial->cmd_item_add(	1, 	"print_log",		"t",	"", 	_serial_print_log);
     _serial->cmd_item_add(	1, 	"print spiff",		"u",	"", 	_serial_print_Spiff);
 
+    #ifdef ADRIOTOOLS_ADVLOGGER
 // 							array 2/2	taille
-    _serial->cmd_array(		2, 			2); 
-//												!touche=value 	return 	function
-    _serial->cmd_item_add(2, "loggerRegion",		"q",		"", 	adriToolLogger_serialMenu_region);
-    _serial->cmd_item_add(2, "logger_regionAddLine","s",		"", 	adriToolLogger_serialMenu_regionAddLine);
-    _serial->cmd_item_add(2, "logger_regionSerial",	"d",		"", 	adriToolLogger_serialMenu_regionSerialPrint);
-    _serial->cmd_item_add(2, "logger",				"e",		"", 	adriToolLogger_serialMenu_cmd);  
-
+    _serial->cmd_array(		2, 			4); 
+//													!touche=value 	return 	function
+    _serial->cmd_item_add(2, "loggerRegion",		"q",			"", 	adriToolLogger_serialMenu_region);
+    _serial->cmd_item_add(2, "logger_regionAddLine","s",			"", 	adriToolLogger_serialMenu_regionAddLine);
+    _serial->cmd_item_add(2, "logger_regionSerial",	"d",			"", 	adriToolLogger_serialMenu_regionSerialPrint);
+    _serial->cmd_item_add(2, "logger",				"e",			"", 	adriToolLogger_serialMenu_cmd);  
+    #endif
+    #ifdef ADRIOTOOLS_SOFTLOGGER
+    _serial->cmd_array(		2, 			1); 
+    _serial->cmd_item_add(2, "logger",				"e",			"", 	adriToolLogger_serialMenu_cmd);  
+    #endif
 // 							&cmd=value  display name	function  							
     _serial->cmd_3( (char*)"&", 		"parse", 		_serial_parse);
 // 							²cmd=value    							

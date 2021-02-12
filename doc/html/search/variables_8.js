@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['printer_5fdisplay_404',['printer_display',['../classadri_tools__logger.html#aeb305d3ce0a17302821148ea83d1f5b5',1,'adriTools_logger']]],
-  ['printer_5fdisplay_5flvl_405',['printer_display_lvl',['../classadri_tools__logger.html#ab5e3f047773f080002abac74bab07481',1,'adriTools_logger']]],
-  ['printer_5fheap_406',['printer_heap',['../classadri_tools__logger.html#aaebe1820509a1bc5a2b324e4ecb61e27',1,'adriTools_logger']]],
-  ['printer_5ftimestamp_407',['printer_timestamp',['../classadri_tools__logger.html#ab8bb810a5266771170506af71848b7fc',1,'adriTools_logger']]]
+  ['printer_5fdisplay_436',['printer_display',['../classadri_tools_logger.html#a82ac17b274bb755ac50a7ad4973c35e3',1,'adriToolsLogger']]],
+  ['printer_5fdisplaymod_5fpos_437',['printer_displayMod_pos',['../classadri_tools_logger.html#a45f0f3835f3b9569fce1b1b5095e3c8d',1,'adriToolsLogger']]],
+  ['printer_5fheap_438',['printer_heap',['../classadri_tools_logger.html#a60309af1fe196d7ea4e607558cba59ca',1,'adriToolsLogger']]],
+  ['printer_5ftimestamp_439',['printer_timestamp',['../classadri_tools_logger.html#af81e93c375442055e270667b230b2741',1,'adriToolsLogger']]]
 ];

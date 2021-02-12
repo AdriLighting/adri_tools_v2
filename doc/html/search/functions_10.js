@@ -1,14 +1,21 @@
 var searchData=
 [
-  ['telnet_5fget_344',['telnet_get',['../classadri__telnet.html#aee4d89006feb2b5d346ed16057400ee6',1,'adri_telnet']]],
-  ['telnet_5floop_345',['telnet_loop',['../classadri__telnet.html#a2547f10200724a9e771ee33df715825a',1,'adri_telnet']]],
-  ['telnet_5fput_346',['telnet_put',['../classadri__telnet.html#aec35ce286c2a2deea2f8a0a5519bdeb7',1,'adri_telnet']]],
-  ['telnet_5fsetup_347',['telnet_setup',['../classadri__telnet.html#a2c563b5f9787e9683b479862604fc60c',1,'adri_telnet']]],
-  ['tempstr_5fget_348',['tempStr_get',['../classadri__tools_v2.html#a8d549d7730edcc1f7eb50b9a1eb02c8b',1,'adri_toolsV2::tempStr_get(int &amp;size)'],['../classadri__tools_v2.html#a43df8c712c1b24e228c4f406a4a816c8',1,'adri_toolsV2::tempStr_get()']]],
-  ['tempstr_5fprint_349',['tempStr_print',['../classadri__tools_v2.html#adb5c487191baeaba9deb605b104a2606',1,'adri_toolsV2']]],
-  ['tempstr_5fsizeset_350',['tempStr_sizeSet',['../classadri__tools_v2.html#acf86359b7495715e5015849faaeac518',1,'adri_toolsV2']]],
-  ['timestamp_351',['timeStamp',['../classadri_tools__logger.html#ae07ce5b41217b60db13f757abf1593fd',1,'adriTools_logger']]],
-  ['toggle_352',['toggle',['../classadri_tools__logger__variables.html#a05688bf23fa466a48a15ac67399b51a9',1,'adriTools_logger_variables']]],
-  ['toggleaddline_353',['toggleAddLine',['../classadri_tools__logger__variables.html#a9d9b9a2a27ae08a428b4df36527ef9cb',1,'adriTools_logger_variables']]],
-  ['toggleserialprint_354',['toggleSerialPrint',['../classadri_tools__logger__variables.html#a7afc400baa67935a0c23bb718b24bc82',1,'adriTools_logger_variables']]]
+  ['seconds2time_355',['seconds2time',['../classadri__tools_v2.html#a11f42d2aaedc8653ca182a33916ec580',1,'adri_toolsV2']]],
+  ['serial_5fmenu_356',['serial_menu',['../classadri_tools_logger.html#a6cba6faea9225d7f5fc8801672837a08',1,'adriToolsLogger']]],
+  ['seriealprint_5fotherregion_5ftoggle_357',['seriealPrint_otherRegion_toggle',['../classadri_tools_logger.html#addfc675c94594cbe876f6e45cc37fe71',1,'adriToolsLogger']]],
+  ['spiff_5faddline_358',['spiff_addLine',['../classadri_tools_logger.html#a46271f530b5368e4acedee9498e5bb7e',1,'adriToolsLogger']]],
+  ['spiff_5fget_359',['spiff_get',['../classadri_tools_logger.html#a1f3808a4a917d77fee49e0ba2b0c1e69',1,'adriToolsLogger']]],
+  ['spiff_5freadcurrent_360',['spiff_readCurrent',['../classadri_tools_logger.html#a2aae566f18655bacf73d930494a370d7',1,'adriToolsLogger']]],
+  ['spiff_5fremovecurrent_361',['spiff_removeCurrent',['../classadri_tools_logger.html#af839884802dd25fa7db84b0dd98619a1',1,'adriToolsLogger']]],
+  ['spiff_5fsetup_362',['spiff_setup',['../classadri_tools_logger.html#a897b1b922d7e2526ee2c63d0ed91f60d',1,'adriToolsLogger']]],
+  ['spiff_5ftoggle_363',['spiff_toggle',['../classadri_tools_logger.html#a3ff224a1454d2e2f2facc2b7d67c35b6',1,'adriToolsLogger']]],
+  ['spiffaddline_5fotherregion_5ftoggle_364',['spiffAddLine_otherRegion_toggle',['../classadri_tools_logger.html#aba9d15491ead2c3cfe8767450789183e',1,'adriToolsLogger']]],
+  ['spiffs_5fprintfiles_365',['SPIFFS_printFiles',['../classadri__tools_v2.html#a6fd3e6a951988aea8b36ce65bffed930',1,'adri_toolsV2']]],
+  ['splittext_366',['splitText',['../classadri_toolsv2__serial_read.html#a4f324f750c620a3e948eafaa0e1e4860',1,'adriToolsv2_serialRead']]],
+  ['statu_367',['statu',['../classadri_tools_logger__region.html#a1fe47977bb8d434289edbbfc407f44b6',1,'adriToolsLogger_region']]],
+  ['statuaddline_368',['statuAddLine',['../classadri_tools_logger__region.html#a9c918f36188c558f3962ad7b05e74618',1,'adriToolsLogger_region']]],
+  ['statuserialprint_369',['statuSerialPrint',['../classadri_tools_logger__region.html#a71b9ec397a6f8f1b3fb1a26b419b1be5',1,'adriToolsLogger_region']]],
+  ['strcontains_370',['strContains',['../classadri_tools_logger.html#aab3dd527fef5e19d2753f2fdc72f64fc',1,'adriToolsLogger']]],
+  ['string2ip_371',['string2ip',['../classadri__tools_v2.html#af341566573d64aa9c74cc76d8d5bac40',1,'adri_toolsV2']]],
+  ['strlen_372',['strlen',['../namespace_arduino_trace.html#a3089af7d454fda5903dc27fbdba9c4ff',1,'ArduinoTrace']]]
 ];

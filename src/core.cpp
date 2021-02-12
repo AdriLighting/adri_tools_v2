@@ -2,7 +2,6 @@
 
 #include "core.h"
 
-
 // region ################################################ ARDUINOTRACE 
 // (Edited frm : ArduinoTrace - github.com/bblanchon/ArduinoTrace)
 // ########################################################################################
@@ -14,6 +13,7 @@ String ARDUINOTRACE_EXTERN_STRING;
 // endregion >>>> ARDUINOTRACE
 
 const char PROGMEM adriTools_ch_cr[]  = "\n";
+char * adriTools_PrBuffer;
 
 // region ################################################ ADRI_TOOLSV2
 // ########################################################################################
@@ -22,22 +22,29 @@ adri_toolsV2 * adri_toolsv2Ptr_get(){
     if (adri_toolsv2_ptr==nullptr) adri_toolsv2_ptr = new adri_toolsV2();
     return adri_toolsv2_ptr;
 }
-adri_toolsV2::adri_toolsV2(){
-    heap_start = ESP.getFreeHeap();
-    heap_last = ESP.getFreeHeap();
-    adri_toolsv2_ptr = this;
+void adri_toolsv2Ptr_chech(){
+    if (adri_toolsv2_ptr==nullptr) adri_toolsv2_ptr = new adri_toolsV2();
 }
-
 void adri_toolsV2::loop(){
     if (heap_monitor) heap_monitorLoop();
-    if (adri_toolsv2_ptr->_telnetLoop != NULL) adri_toolsv2_ptr->_telnetLoop ();
-
+    if (_telnetLoop != NULL) _telnetLoop ();
 }
+adri_toolsV2::adri_toolsV2(){
+    adri_toolsv2_ptr = this;
+    adriTools_PrBuffer = new char[255];
+    heap_start = ESP.getFreeHeap();
+    heap_last = ESP.getFreeHeap();
+}
+adri_toolsV2::adri_toolsV2(int size){
+    adri_toolsv2_ptr = this;
+    adriTools_PrBuffer = new char[size];
+    heap_start = ESP.getFreeHeap();
+    heap_last = ESP.getFreeHeap();
+}  
 // endregion >>>> ADRI_TOOLSV2
 // 
 // region ################################################ FSPRINTF
 // ########################################################################################
-char adriTools_PrBuffer[1024];
 
  /**
  * @fn          { adriTools_print (String buf) }
@@ -54,18 +61,28 @@ void adriTools_print (String buf) {
             adri_toolsv2_ptr->_telnetPut(buf);
         }
     }
+
     Serial.print(buf);
 }
 void adriTools_printLn      (String buf) {Serial.println(buf);}
+void adriTools_getbufferSier(const char *tag){
+    int length = sizeof(tag)/sizeof(char);
+    const char *arr_ptr = &tag[0];
+    Serial.print(F("size 1: "));
+    Serial.print(length);
+    Serial.print(F(" - size 2: "));
+    Serial.println(strlen(arr_ptr));
+
+}
 // endregion >>>> FSPRINTF
 
 // region ################################################ LOG
 // ########################################################################################
 
 
-void adri_toolsV2::log_filePath_set(String ret){ADRI_LOG(-1, 2, 2, "", "");log_filePath = ret; }
-void adri_toolsV2::log_read(String & ret, boolean lineNbr){
-    ADRI_LOG(-1, 0, 2, "", "");
+void adri_toolsV2::log_filePath_set(String ret, int debug){/*ADRI_LOG(debug, 2, 2, "", "");*/log_filePath = ret; }
+void adri_toolsV2::log_read(String & ret, boolean lineNbr, int debug){
+    // ADRI_LOG(debug, 0, 2, "", "");
     if (lineNbr) fsprintf("\n[_log_read]\n"); 
     char buffer[255];
     ret = "";
@@ -89,14 +106,14 @@ void adri_toolsV2::log_read(String & ret, boolean lineNbr){
         }
         file.close(); 
     }
-    ADRI_LOG(-1, 1, 2, "", "");
+    // ADRI_LOG(debug, 1, 2, "", "");
 }
-void adri_toolsV2::log_write(String & old, String timeStr){
-    ADRI_LOG(-1, 2, 2, "", "");
+void adri_toolsV2::log_write(String & old, String timeStr, int debug){
+    // ADRI_LOG(debug, 2, 2, "", "");
     int freeHeap = ESP.getFreeHeap();
     File file = LittleFS.open(log_filePath, "w");
     if (file) {
-        char buffer[255];
+        char buffer[1000];
         sprintf(buffer, "%15s | %15d", timeStr.c_str(), freeHeap);
         String result = old + "\n" + String(buffer);
         file.println(result);
@@ -105,11 +122,11 @@ void adri_toolsV2::log_write(String & old, String timeStr){
     } 
 }
 
-void adri_toolsV2::log_write(String & old , String timeStr, String msg){
-    ADRI_LOG(-1, 2, 2, "", "");
+void adri_toolsV2::log_write(String & old , String timeStr, String msg, int debug){
+    // ADRI_LOG(debug, 2, 2, "", "");
     File file = LittleFS.open(log_filePath, "w");
     if (file) {
-        char buffer[255];
+        char buffer[1000];
         sprintf(buffer, "%15s | %s", timeStr.c_str(), msg.c_str());
         String result = old + "\n" + String(buffer);
         file.println(result);
@@ -164,6 +181,23 @@ String adri_toolsV2::ch_toString(const char * c){
 
 // region ################################################ TIME
 // ########################################################################################
+int* adri_toolsV2::splitTime(String Val, char sep) {
+   String      aVal            = Val;
+   byte        firstIndex      = aVal.indexOf(sep);
+   byte        secondIndex     = aVal.indexOf(sep, firstIndex + 1);
+   String      hr              = aVal.substring(0, firstIndex);
+   String      minute          = aVal.substring(firstIndex + 1, secondIndex);
+   String      sec             = aVal.substring(secondIndex + 1);
+   int         _hr             = hr.toInt();
+   int         _minute         = minute.toInt();
+   int         _sec            = sec.toInt();
+
+   int     *array          = new int[3];
+           array[0]        = _hr;
+           array[1]        = _minute;
+           array[2]        = _sec;
+   return array;    
+}
 void adri_toolsV2::seconds2time(unsigned long s, char * time) {
    // int milli      = (s                    ) % 1000;
    int seconds    = (s /   (1000)         ) % 60   ;
@@ -172,12 +206,26 @@ void adri_toolsV2::seconds2time(unsigned long s, char * time) {
    int days    = (s /  (1000*3600*24)  )     ;
    sprintf(time,"%d-%02d:%02d:%02d", days, hours , minutes, seconds);
 }
-
+void adri_toolsV2::millis2time(unsigned long s, char * time) {
+   int milli      = (s                    ) % 1000;
+   int seconds    = (s /   (1000)         ) % 60   ;
+   int minutes    = (s /   (1000*60)      ) % 60   ;
+   int hours      = (s /   (1000*3600)    ) % 24   ;
+   int days    = (s /  (1000*3600*24)  )     ;
+   sprintf(time,"%d-%02d:%02d:%02d:%01d", days, hours , minutes, seconds, milli);
+}
 String adri_toolsV2::on_time() {
    char t[100];
    unsigned long offset = 0; //1000 * 60 * 60 * 24 * 3 ;
    unsigned long ms=millis()+offset;
    seconds2time(ms, t);
+   return String(t);
+}
+String adri_toolsV2::om_time() {
+   char t[100];
+   unsigned long offset = 0; //1000 * 60 * 60 * 24 * 3 ;
+   unsigned long ms=millis()+offset;
+   millis2time(ms, t);
    return String(t);
 }
 
@@ -186,6 +234,8 @@ String adri_toolsV2::on_time(long ms) {
    seconds2time(ms, t);
    return String(t);
 }
+
+
 // endregion >>>> TIME
 
 // region ################################################ IP

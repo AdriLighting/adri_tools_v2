@@ -1,17 +1,5 @@
 var searchData=
 [
-  ['printer_154',['Printer',['../struct_arduino_trace_1_1_printer.html',1,'ArduinoTrace::Printer&lt; TFilename, TPrefix &gt;'],['../struct_arduino_trace_1_1_printer.html#ac81b50c96db0f870407067dd4d955a14',1,'ArduinoTrace::Printer::Printer()']]],
-  ['printer_5fdisplay_155',['printer_display',['../classadri_tools__logger.html#aeb305d3ce0a17302821148ea83d1f5b5',1,'adriTools_logger']]],
-  ['printer_5fdisplay_5flvl_156',['printer_display_lvl',['../classadri_tools__logger.html#ab5e3f047773f080002abac74bab07481',1,'adriTools_logger']]],
-  ['printer_5fdisplay_5flvl_5fset_157',['printer_display_lvl_set',['../classadri_tools__logger.html#aea9f08d7307f737d069ddbb7e5b30d7a',1,'adriTools_logger']]],
-  ['printer_5fdisplay_5ftoggle_158',['printer_display_toggle',['../classadri_tools__logger.html#a3bd7b04b83b72964a355e5bcd6d9fc10',1,'adriTools_logger']]],
-  ['printer_5fdisplaymod_159',['printer_displayMod',['../classadri_tools__logger.html#a2fe5b72abc4da73a5b561501410af47d',1,'adriTools_logger']]],
-  ['printer_5fheap_160',['printer_heap',['../classadri_tools__logger.html#aaebe1820509a1bc5a2b324e4ecb61e27',1,'adriTools_logger']]],
-  ['printer_5fheap_5ftoggle_161',['printer_heap_toggle',['../classadri_tools__logger.html#aa3779b47d448c2046176f274914d234d',1,'adriTools_logger']]],
-  ['printer_5fserial_162',['printer_serial',['../classadri_tools__logger.html#a7dad8dab07a00f2bf3aa98d720c40072',1,'adriTools_logger']]],
-  ['printer_5ftimestamp_163',['printer_timestamp',['../classadri_tools__logger.html#ab8bb810a5266771170506af71848b7fc',1,'adriTools_logger']]],
-  ['printer_5ftimestamp_5ftoggle_164',['printer_timestamp_toggle',['../classadri_tools__logger.html#a261e1507cd96ea83296eb788c46b91c7',1,'adriTools_logger']]],
-  ['printerd_165',['PrinterD',['../struct_arduino_trace_1_1_printer_d.html',1,'ArduinoTrace::PrinterD&lt; TPrefix &gt;'],['../struct_arduino_trace_1_1_printer_d.html#aeb61a56d9c752328d1ceecf9b43da182',1,'ArduinoTrace::PrinterD::PrinterD()']]],
-  ['printerf_166',['PrinterF',['../struct_arduino_trace_1_1_printer_f.html',1,'ArduinoTrace::PrinterF&lt; TFilename, TPrefix &gt;'],['../struct_arduino_trace_1_1_printer_f.html#a65495d0c8a76b03bc998b44101fbd4a0',1,'ArduinoTrace::PrinterF::PrinterF()']]],
-  ['printerl_167',['PrinterL',['../struct_arduino_trace_1_1_printer_l.html',1,'ArduinoTrace::PrinterL&lt; TFilename, TPrefix &gt;'],['../struct_arduino_trace_1_1_printer_l.html#ac9e222436552f7d39b8fc4b0f2f266d2',1,'ArduinoTrace::PrinterL::PrinterL()']]]
+  ['om_5ftime_173',['om_time',['../classadri__tools_v2.html#a8ffd27d9bf5a5ce2bb83214b20d7ffe2',1,'adri_toolsV2']]],
+  ['on_5ftime_174',['on_time',['../classadri__tools_v2.html#a2afe642429d0f957bc5441e652a8e1a8',1,'adri_toolsV2::on_time()'],['../classadri__tools_v2.html#a7464eb6c4402dd9eb25b4d72b4d5f2df',1,'adri_toolsV2::on_time(long ms)']]]
 ];
