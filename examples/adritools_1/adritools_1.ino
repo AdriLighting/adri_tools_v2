@@ -8,6 +8,7 @@
 #define ADRIOTOOLS_SOFTLOGGER 
 #include <adri_soft_logger.h>
 #include <adri_tools_v2.h>
+#include <adri_tools_v2_serialMenu.h>
 
 #ifdef ADRIOTOOLS_USETELNET
 	adri_telnet * _adri_telnet;
