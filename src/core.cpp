@@ -2,6 +2,14 @@
 
 #include "core.h"
 
+
+namespace {
+String  string_to_split(String name, String value){
+    return name + ";" + value;
+}    
+}
+
+
 // region ################################################ ARDUINOTRACE 
 // (Edited frm : ArduinoTrace - github.com/bblanchon/ArduinoTrace)
 // ########################################################################################
@@ -14,6 +22,7 @@ String ARDUINOTRACE_EXTERN_STRING;
 
 const char PROGMEM adriTools_ch_cr[]  = "\n";
 char * adriTools_PrBuffer;
+
 
 // region ################################################ ADRI_TOOLSV2
 // ########################################################################################
@@ -437,6 +446,7 @@ String adri_toolsV2::boot_device(boot_flags flags) {
     if (flags.bootdevice_flash) boot_device+=" (flash)";
     return boot_device;
 }
+
 void adri_toolsV2::ESP_boot_info() {
     if (tempStrArray != nullptr) delete[] tempStrArray;
     tempStrArraySize    = 4;
@@ -446,9 +456,9 @@ void adri_toolsV2::ESP_boot_info() {
     boot_flags      f           = bootmode_detect();
 
     tempStrArray[0] = "\nBOOT\n";
-    tempStrArray[1] = info_parm(F("reset reason"), String(RST_REASONS[resetInfo->reason]), 30);     
-    tempStrArray[2] = info_parm(F("reset cause"),  reset_cause(f), 30);     
-    tempStrArray[3] = info_parm(F("boot device"),  boot_device(f), 30);     
+    tempStrArray[1] = string_to_split(F("reset reason"), String(RST_REASONS[resetInfo->reason]));     
+    tempStrArray[2] = string_to_split(F("reset cause"),  reset_cause(f));     
+    tempStrArray[3] = string_to_split(F("boot device"),  boot_device(f));     
 
 }
 
@@ -462,17 +472,35 @@ void adri_toolsV2::ESP_core_info() {
     fssprintf(chip_id," (0x%06x)",ESP.getChipId());
 
     tempStrArray[0] = fsget(sys_sys);
-    tempStrArray[1] = info_parm(fsget(sys_chip), ESP.getChipId()+String(chip_id), 25);
-    tempStrArray[2] = info_parm(fsget(sys_core), String(ESP.getCoreVersion())+"/"+ESP.getSdkVersion());
-    tempStrArray[3] = info_parm(fsget(sys_boot), String(ESP.getBootVersion()));
-    tempStrArray[4] = info_parm(fsget(sys_heap), String(ESP.getFreeHeap())+"bytes");
-    tempStrArray[5] = info_parm(fsget(sys_cpu),  String(ESP.getCpuFreqMHz())+"MHz");
-    tempStrArray[6] = info_parm(fsget(sys_vcc),  String(ESP.getVcc())+"mV") ;
+    tempStrArray[1] = string_to_split(fsget(sys_chip), ESP.getChipId()+String(chip_id));
+    tempStrArray[2] = string_to_split(fsget(sys_core), String(ESP.getCoreVersion())+"/"+ESP.getSdkVersion());
+    tempStrArray[3] = string_to_split(fsget(sys_boot), String(ESP.getBootVersion()));
+    tempStrArray[4] = string_to_split(fsget(sys_heap), String(ESP.getFreeHeap())+"bytes");
+    tempStrArray[5] = string_to_split(fsget(sys_cpu),  String(ESP.getCpuFreqMHz())+"MHz");
+    tempStrArray[6] = string_to_split(fsget(sys_vcc),  String(ESP.getVcc())+"mV") ;
 }
+void adri_toolsV2::ESP_shortFlash_info() {
+    if (tempStrArray != nullptr) delete[] tempStrArray;
+    tempStrArraySize    = 8;
+    tempStrArray        = new String[tempStrArraySize];
 
+    tempStrArray[0] = "\nFLASH\n";
+
+    FSInfo f;
+    LittleFS.info(f);
+
+    tempStrArray[1] = string_to_split(F("sketch size"),           String(ESP.getSketchSize())                         );
+    tempStrArray[2] = string_to_split(F("sketch freeSpace"),      String(ESP.getFreeSketchSpace())                    );
+    tempStrArray[3] = (ESP.getFlashChipRealSize()!=ESP.getFlashChipSize()) ? string_to_split(fsget(flash_conf), F("error")) : string_to_split(fsget(flash_conf), F("ok"));
+    tempStrArray[4] = string_to_split(F("SPIFFS"),    "____");
+    tempStrArray[5] = string_to_split(F("spiffs TotalBytes"),    String(f.totalBytes)                                );
+    tempStrArray[6] = string_to_split(F("spiffs UsedBytes"),     String(f.usedBytes)                                 );
+    tempStrArray[7] = string_to_split(F("spiffs FreeBytes"),     String(f.totalBytes-f.usedBytes)                    );
+
+}
 void adri_toolsV2::ESP_flash_info() {
     if (tempStrArray != nullptr) delete[] tempStrArray;
-    tempStrArraySize    = 13;
+    tempStrArraySize    = 12;
     tempStrArray        = new String[tempStrArraySize];
 
     tempStrArray[0] = "\nFLASH\n";
@@ -491,18 +519,18 @@ void adri_toolsV2::ESP_flash_info() {
         case FM_DOUT:   io="DOUT";  break;
         default     :   io="UNKNOWN";
     }
-    tempStrArray[1] = info_parm(F("flash size map"),        String(FLASH_SIZE_MAP_NAMES[system_get_flash_size_map()]));
-    tempStrArray[2] = info_parm(F("chip size"),             String(ESP.getFlashChipRealSize())                  );
-    tempStrArray[3] = info_parm(F("ide size"),              String(ESP.getFlashChipSize())                      );
-    tempStrArray[4] = info_parm(F("ide speed"),             String(ESP.getFlashChipSpeed())                     );
-    tempStrArray[5] = info_parm(F("ide mode"),              io                                                  );
-    tempStrArray[6] = info_parm(F("sketch size"),           String(ESP.getSketchSize())                         );
-    tempStrArray[7] = info_parm(F("free space"),            String(ESP.getFreeSketchSpace())                    );
-    tempStrArray[8] = (ESP.getFlashChipRealSize()!=ESP.getFlashChipSize()) ? info_parm(fsget(flash_conf), F("error")) : info_parm(fsget(flash_conf), F("ok"));
-    tempStrArray[0] = "\nSPIIFS\n";
-    tempStrArray[10] = info_parm(F("spiffs TotalBytes"),    String(f.totalBytes)                                );
-    tempStrArray[11] = info_parm(F("spiffs UsedBytes"),     String(f.usedBytes)                                 );
-    tempStrArray[12] = info_parm(F("spiffs FreeBytes"),     String(f.totalBytes-f.usedBytes)                    );
+    // tempStrArray[1] = string_to_split(F("flash size map"),        String(FLASH_SIZE_MAP_NAMES[system_get_flash_size_map()]));
+    tempStrArray[1] = string_to_split(F("chip size"),             String(ESP.getFlashChipRealSize())                  );
+    tempStrArray[2] = string_to_split(F("ide size"),              String(ESP.getFlashChipSize())                      );
+    tempStrArray[3] = string_to_split(F("ide speed"),             String(ESP.getFlashChipSpeed())                     );
+    tempStrArray[4] = string_to_split(F("ide mode"),              io                                                  );
+    tempStrArray[5] = string_to_split(F("sketch size"),           String(ESP.getSketchSize())                         );
+    tempStrArray[6] = string_to_split(F("sketch freeSpace"),      String(ESP.getFreeSketchSpace())                    );
+    tempStrArray[7] = (ESP.getFlashChipRealSize()!=ESP.getFlashChipSize()) ? string_to_split(fsget(flash_conf), F("error")) : string_to_split(fsget(flash_conf), F("ok"));
+    tempStrArray[8] = string_to_split(F("SPIFFS"),    "____");
+    tempStrArray[9] = string_to_split(F("spiffs TotalBytes"),    String(f.totalBytes)                                );
+    tempStrArray[10] = string_to_split(F("spiffs UsedBytes"),     String(f.usedBytes)                                 );
+    tempStrArray[11] = string_to_split(F("spiffs FreeBytes"),     String(f.totalBytes-f.usedBytes)                    );
 
 }
 // endregion >>>> ESP
@@ -536,3 +564,29 @@ void adri_toolsV2::heap_monitorToggle() {
 // >>> HEAP    
 // endregion >>>> HEAP
 
+    boolean adri_toolsV2::toBoolean(String value){
+        if (value == "1") {
+            return true;
+        }        
+        if (value == "true") {
+            return true;
+        }
+        if (value ==  "TRUE") {
+            return true;
+        }
+        if (value ==  "True") {
+            return true;
+        }
+        if (value ==  "0") {
+            return false;
+        }        
+        if (value ==  "false") {
+            return false;
+        }
+        if (value ==  "FALSE") {
+            return false;
+        }
+        if (value ==  "False") {
+            return false;
+        }
+    }   

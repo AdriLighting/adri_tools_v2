@@ -21,7 +21,7 @@
 	const char 			* myWifiHostname = "MY_WIFI"; 	// AP AND DNS HOSTNAME 
 														
 											// 	AWC_LOOP; 		WIFI CONNECT STARTUP WITH STATIC 
-											// 	AWC_SETUP; 		WIFI CONNECT STARTUP WITH STATIC 
+							€				// 	AWC_SETUP; 		WIFI CONNECT STARTUP WITH STATIC 
 	WIFICONNECT_MOD		myWifiConnectMod 	= 	AWC_SETUP;	
 
 											// 	AWCS_MULTI;		STA CONNECT WITH MULTIPLE SSID
@@ -126,12 +126,38 @@ void setup()
 // region ################################################ ESP 
 // PRINT ESP INFOS
 // 
+	int tempSize =0;
+	String * temp = nullptr;
+
 	_tools->ESP_core_info();
-	_tools->tempStr_print();
+	temp = _tools->tempStr_get(tempSize);
+	for (int i = 0; i < tempSize; ++i) {
+		String s[2];
+		_tools->explode(temp[i], ';', s);
+		String sF = _tools->info_parm(s[0], s[1]);
+        fsprintf("%s", sF.c_str());
+        yield();
+    }	
+
 	_tools->ESP_flash_info();
-	_tools->tempStr_print();
+	temp = _tools->tempStr_get(tempSize);
+	for (int i = 0; i < tempSize; ++i) {
+		String s[2];
+		_tools->explode(temp[i], ';', s);
+		String sF = _tools->info_parm(s[0], s[1]);
+        fsprintf("%s", sF.c_str());
+        yield();
+    }
+
 	_tools->ESP_boot_info();
-	_tools->tempStr_print();
+	temp = _tools->tempStr_get(tempSize);
+	for (int i = 0; i < tempSize; ++i) {
+		String s[2];
+		_tools->explode(temp[i], ';', s);
+		String sF = _tools->info_parm(s[0], s[1]);
+        fsprintf("%s", sF.c_str());
+        yield();
+    }
 // endregion >>>> ESP
 
 // region ################################################ SPIFFS FILESYSTEM

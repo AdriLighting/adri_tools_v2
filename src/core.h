@@ -162,6 +162,7 @@
 		
 		void ESP_core_info();
 		void ESP_flash_info();
+		void ESP_shortFlash_info();
 		void ESP_boot_info();
 
 		String 	heap_string();
@@ -170,6 +171,8 @@
 		void 	heap_monitorToggle();
 
 		void loop();
+
+		boolean toBoolean(String value);
 	};
 	adri_toolsV2 * adri_toolsv2Ptr_get();
 
