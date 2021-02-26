@@ -3,7 +3,7 @@
 #include "core.h"
 
     #if defined(ESP8266)
-        #define FILESYSTEM FILESYSTEM
+        #define FILESYSTEM LittleFS
     #elif defined(ESP32)
         #define FILESYSTEM SPIFFS
     #else
