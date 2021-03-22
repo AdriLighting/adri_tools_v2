@@ -1,9 +1,17 @@
 #ifndef CORE_H
 	#define CORE_H
 
-	#include <arduino.h>
-	#include <ESP8266WiFi.h>
-	#include <LittleFS.h>
+
+	#if defined(ESP8266)
+		#include <arduino.h>
+		#include <ESP8266WiFi.h>
+		#include <LittleFS.h>
+	#elif defined(ESP32)
+		#include <arduino.h>
+		#include <WiFi.h>
+		#include <SPIFFS.h>
+	#else
+	#endif
 
 	extern String ARDUINOTRACE_EXTERN_STRING;
 
