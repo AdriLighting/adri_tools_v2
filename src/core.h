@@ -140,7 +140,10 @@
 		void log_write(String & old, String timeStr, String msg, int debug = -2);
 
 		String ch_toString(char * c);
-		String ch_toString(const char * c);		
+		String ch_toString(const char * c);	
+
+		boolean stringToBool(String value);
+		boolean stringToBool(int value); 
 
 		String literal_value(String name, String xml);
 		String literal_item(String name, String value);
