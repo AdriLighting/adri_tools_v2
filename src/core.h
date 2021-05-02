@@ -85,7 +85,8 @@
 	#define ADRI_LOG(parm_d, parm_c, parm_b, parm_a, ...) ({  						\
     	if(parm_d != -2) {adri_log_(parm_d, parm_c, parm_b, parm_a, __VA_ARGS__);} 	\
 	})
-
+	
+#if defined(ESP8266)
 	struct boot_flags {
 	    unsigned char raw_rst_cause : 4;
 	    unsigned char raw_bootdevice : 4;
@@ -98,6 +99,9 @@
 	    unsigned char bootdevice_ram : 1;
 	    unsigned char bootdevice_flash : 1;
 	};
+#elif defined(ESP32)
+#else
+#endif    	
 
 	typedef void (*_telnet_setup)();  
 	typedef void (*_telnet_loop)();  
@@ -116,8 +120,13 @@
 		int _SPIFFS_printFiles(String path);
 		String log_filePath = "/log.txt";
 
+#if defined(ESP8266)
 		String boot_device(boot_flags flags);	
 		String reset_cause(struct boot_flags flags);
+#elif defined(ESP32)
+#else
+#endif 
+
 	public:
 		
 		// #ifdef ADRIOTOOLS_USETELNET

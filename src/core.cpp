@@ -1,6 +1,12 @@
-
+// dev 1
 #include "core.h"
 
+    #if defined(ESP8266)
+        #define FILESYSTEM LittleFS
+    #elif defined(ESP32)
+        #define FILESYSTEM SPIFFS
+    #else
+    #endif
 
 namespace {
 String  string_to_split(String name, String value){
@@ -14,9 +20,9 @@ String  string_to_split(String name, String value){
 // ########################################################################################
 boolean adri_toolsv2_trace = false;
 String ARDUINOTRACE_EXTERN_STRING;
- String ARDUINOTRACE_LINE ;
- String ARDUINOTRACE_FUNC ;
- String ARDUINOTRACE_VAR  ;
+String ARDUINOTRACE_LINE ;
+String ARDUINOTRACE_FUNC ;
+String ARDUINOTRACE_VAR  ;
 // endregion >>>> ARDUINOTRACE
 
 const char PROGMEM adriTools_ch_cr[]  = "\n";
@@ -96,7 +102,7 @@ void adri_toolsV2::log_read(String & ret, boolean lineNbr, int debug){
     ret = "";
     String print = "";
     int nbr = 0;
-    File file = LittleFS.open(log_filePath, "r");
+    File file = FILESYSTEM.open(log_filePath, "r");
     if (file) {
         while (file.position()<file.size()) {
             String xml = file.readStringUntil('\n');
@@ -119,7 +125,7 @@ void adri_toolsV2::log_read(String & ret, boolean lineNbr, int debug){
 void adri_toolsV2::log_write(String & old, String timeStr, int debug){
     // ADRI_LOG(debug, 2, 2, "", "");
     int freeHeap = ESP.getFreeHeap();
-    File file = LittleFS.open(log_filePath, "w");
+    File file = FILESYSTEM.open(log_filePath, "w");
     if (file) {
         char buffer[1000];
         sprintf(buffer, "%15s | %15d", timeStr.c_str(), freeHeap);
@@ -132,7 +138,7 @@ void adri_toolsV2::log_write(String & old, String timeStr, int debug){
 
 void adri_toolsV2::log_write(String & old , String timeStr, String msg, int debug){
     // ADRI_LOG(debug, 2, 2, "", "");
-    File file = LittleFS.open(log_filePath, "w");
+    File file = FILESYSTEM.open(log_filePath, "w");
     if (file) {
         char buffer[1000];
         sprintf(buffer, "%15s | %s", timeStr.c_str(), msg.c_str());
@@ -339,87 +345,102 @@ String adri_toolsV2::jsonAddIntValue (boolean start, char * c_label, String valu
 // region ################################################ FILESYSTEM
 // ########################################################################################
 int adri_toolsV2::_SPIFFS_printFiles(String path){
+    #if defined(ESP8266)
+        Dir sub_dir = FILESYSTEM.openDir(path);
 
-    Dir sub_dir = LittleFS.openDir(path);
-
-    fsprintf("\t[%s]\n", path.c_str());
-    int totalsize = 0;
-    while (sub_dir.next()) {
-        if (sub_dir.isDirectory()) _SPIFFS_printFiles(path + "/" + sub_dir.fileName());
-        else {
-            String sub_fileInfo = sub_dir.fileName() + (sub_dir.isDirectory() ? " [sub_dir]" : String(" (") + sub_dir.fileSize() + " b)");
-            fsprintf("\t\t%s\n", sub_fileInfo.c_str());   
-            totalsize += sub_dir.fileSize();
+        fsprintf("\t[%s]\n", path.c_str());
+        int totalsize = 0;
+        while (sub_dir.next()) {
+            if (sub_dir.isDirectory()) _SPIFFS_printFiles(path + "/" + sub_dir.fileName());
+            else {
+                String sub_fileInfo = sub_dir.fileName() + (sub_dir.isDirectory() ? " [sub_dir]" : String(" (") + sub_dir.fileSize() + " b)");
+                fsprintf("\t\t%s\n", sub_fileInfo.c_str());   
+                totalsize += sub_dir.fileSize();
+            }
         }
-    }
-    if (totalsize > 0) fsprintf("\t\t\t[totalsize: %d b]\n", totalsize);  
-    return totalsize;
+        if (totalsize > 0) fsprintf("\t\t\t[totalsize: %d b]\n", totalsize); 
+        return totalsize; 
+    #elif defined(ESP32)
+        return 0;
+    #else
+    #endif
+
+    return 0;
 }
 void adri_toolsV2::SPIFFS_printFiles(String path){
-    ADRI_LOG(-1, 0, 2,"","");
-    Dir dir = LittleFS.openDir(path);
-    Serial.println("");
-    Serial.println( F("[Print file and folder]"));
-    int totalsize = 0;
-    while (dir.next()) {
-        String fileInfo = dir.fileName() + (dir.isDirectory() ? " [DIR]" : String(" (") + dir.fileSize() + " b)");
-        if (dir.isDirectory()) {
-            int dSize = _SPIFFS_printFiles(dir.fileName());
-            totalsize += dSize;
-        } else  {
-            Serial.println(fileInfo);
-            totalsize += dir.fileSize();
+    #if defined(ESP8266)
+        ADRI_LOG(-1, 0, 2,"","");
+        Dir dir = FILESYSTEM.openDir(path);
+        Serial.println("");
+        Serial.println( F("[Print file and folder]"));
+        int totalsize = 0;
+        while (dir.next()) {
+            String fileInfo = dir.fileName() + (dir.isDirectory() ? " [DIR]" : String(" (") + dir.fileSize() + " b)");
+            if (dir.isDirectory()) {
+                int dSize = _SPIFFS_printFiles(dir.fileName());
+                totalsize += dSize;
+            } else  {
+                Serial.println(fileInfo);
+                totalsize += dir.fileSize();
+            }
         }
-    }
-    fsprintf("\n[totalsize: %d b]\n", totalsize);
-    Serial.println();
-    ADRI_LOG(-1, 1, 2,"","");
+        fsprintf("\n[totalsize: %d b]\n", totalsize);
+        Serial.println();
+        ADRI_LOG(-1, 1, 2,"","");
+    #elif defined(ESP32)
+    #else
+    #endif    
 }
 // endregion >>>> FILESYSTEM
 
 // region ################################################ ESP
 // ########################################################################################
-const char * const FLASH_SIZE_MAP_NAMES[] = {
-    "FLASH_SIZE_4M_MAP_256_256",
-    "FLASH_SIZE_2M",
-    "FLASH_SIZE_8M_MAP_512_512",
-    "FLASH_SIZE_16M_MAP_512_512",
-    "FLASH_SIZE_32M_MAP_512_512",
-    "FLASH_SIZE_16M_MAP_1024_1024",
-    "FLASH_SIZE_32M_MAP_1024_1024"
-};
-const char * const RST_REASONS[] = {
-    "normal startup by power on",
-    "hardware watch dog reset",
-    "exception reset, GPIO status won’t change",
-    "software watch dog reset, GPIO status won’t change",
-    "software restart ,system_restart , GPIO status won’t change",
-    "wake up from deep-sleep",
-    "external system reset"
-};
-struct boot_flags bootmode_detect(void) {
-    int reset_reason = 0, bootmode = 0;
-    asm (
-        "movi %0, 0x60000600\n\t"
-        "movi %1, 0x60000200\n\t"
-        "l32i %0, %0, 0x114\n\t"
-        "l32i %1, %1, 0x118\n\t"
-        : "+r" (reset_reason), "+r" (bootmode) /* Outputs */
-        : /* Inputs (none) */
-        : "memory" /* Clobbered */
-    );
+#if defined(ESP8266)
+    const char * const FLASH_SIZE_MAP_NAMES[] = {
+        "FLASH_SIZE_4M_MAP_256_256",
+        "FLASH_SIZE_2M",
+        "FLASH_SIZE_8M_MAP_512_512",
+        "FLASH_SIZE_16M_MAP_512_512",
+        "FLASH_SIZE_32M_MAP_512_512",
+        "FLASH_SIZE_16M_MAP_1024_1024",
+        "FLASH_SIZE_32M_MAP_1024_1024"
+    };
+    const char * const RST_REASONS[] = {
+        "normal startup by power on",
+        "hardware watch dog reset",
+        "exception reset, GPIO status won’t change",
+        "software watch dog reset, GPIO status won’t change",
+        "software restart ,system_restart , GPIO status won’t change",
+        "wake up from deep-sleep",
+        "external system reset"
+    };
+    struct boot_flags bootmode_detect(void) {
+        int reset_reason = 0, bootmode = 0;
+        asm (
+            "movi %0, 0x60000600\n\t"
+            "movi %1, 0x60000200\n\t"
+            "l32i %0, %0, 0x114\n\t"
+            "l32i %1, %1, 0x118\n\t"
+            : "+r" (reset_reason), "+r" (bootmode) /* Outputs */
+            : /* Inputs (none) */
+            : "memory" /* Clobbered */
+        );
 
-    struct boot_flags flags;
-    flags.raw_rst_cause     = (reset_reason&0xF);
-    flags.raw_bootdevice    = ((bootmode>>0x10)&0x7);
-    flags.raw_bootmode      = ((bootmode>>0x1D)&0x7);
-    flags.rst_normal_boot   = flags.raw_rst_cause == 0x1;
-    flags.rst_reset_pin     = flags.raw_rst_cause == 0x2;
-    flags.rst_watchdog      = flags.raw_rst_cause == 0x4;
-    flags.bootdevice_ram    = flags.raw_bootdevice == 0x1;
-    flags.bootdevice_flash  = flags.raw_bootdevice == 0x3;
-    return flags;
-}
+        struct boot_flags flags;
+        flags.raw_rst_cause     = (reset_reason&0xF);
+        flags.raw_bootdevice    = ((bootmode>>0x10)&0x7);
+        flags.raw_bootmode      = ((bootmode>>0x1D)&0x7);
+        flags.rst_normal_boot   = flags.raw_rst_cause == 0x1;
+        flags.rst_reset_pin     = flags.raw_rst_cause == 0x2;
+        flags.rst_watchdog      = flags.raw_rst_cause == 0x4;
+        flags.bootdevice_ram    = flags.raw_bootdevice == 0x1;
+        flags.bootdevice_flash  = flags.raw_bootdevice == 0x3;
+        return flags;
+    }
+#elif defined(ESP32)
+#else
+#endif    
+
 fs(sys_sys,     "\nSYSTEM\n");
 fs(sys_core,    "Core/SDK");
 fs(sys_heap,    "Heap");
@@ -432,33 +453,41 @@ fs(sys_vcc,     "Vcc");
 fs(ko,          "error");
 fs(ok,          "ok");
 fs(flash_conf,  "flash configuration");
-String adri_toolsV2::reset_cause(struct boot_flags flags) {
-    String reset_cause=String(flags.raw_rst_cause);
-    if (flags.rst_normal_boot)  reset_cause+=" (normal boot)";
-    if (flags.rst_reset_pin)    reset_cause+=" (reset pin)";
-    if (flags.rst_watchdog)     reset_cause+=" (watchdog reset)";
-    return reset_cause;
-}
-String adri_toolsV2::boot_device(boot_flags flags) {
-    String boot_device = String(flags.raw_bootdevice);
-    if (flags.bootdevice_ram)   boot_device+=" (ram)";
-    if (flags.bootdevice_flash) boot_device+=" (flash)";
-    return boot_device;
-}
+
+#if defined(ESP8266)
+    String adri_toolsV2::reset_cause(struct boot_flags flags) {
+        String reset_cause=String(flags.raw_rst_cause);
+        if (flags.rst_normal_boot)  reset_cause+=" (normal boot)";
+        if (flags.rst_reset_pin)    reset_cause+=" (reset pin)";
+        if (flags.rst_watchdog)     reset_cause+=" (watchdog reset)";
+        return reset_cause;
+    }
+    String adri_toolsV2::boot_device(boot_flags flags) {
+        String boot_device = String(flags.raw_bootdevice);
+        if (flags.bootdevice_ram)   boot_device+=" (ram)";
+        if (flags.bootdevice_flash) boot_device+=" (flash)";
+        return boot_device;
+    }
+#elif defined(ESP32)
+#else
+#endif 
 
 void adri_toolsV2::ESP_boot_info() {
     if (tempStrArray != nullptr) delete[] tempStrArray;
     tempStrArraySize    = 4;
     tempStrArray        = new String[tempStrArraySize];
 
-    const rst_info  * resetInfo = system_get_rst_info();
-    boot_flags      f           = bootmode_detect();
-
-    tempStrArray[0] = "\nBOOT\n";
-    tempStrArray[1] = string_to_split(F("reset reason"), String(RST_REASONS[resetInfo->reason]));     
-    tempStrArray[2] = string_to_split(F("reset cause"),  reset_cause(f));     
-    tempStrArray[3] = string_to_split(F("boot device"),  boot_device(f));     
-
+    #if defined(ESP8266)
+        const rst_info  * resetInfo = system_get_rst_info();
+        boot_flags      f           = bootmode_detect();    
+        tempStrArray[0] = "\nBOOT\n";
+        tempStrArray[1] = string_to_split(F("reset reason"), String(RST_REASONS[resetInfo->reason]));     
+        tempStrArray[2] = string_to_split(F("reset cause"),  reset_cause(f));     
+        tempStrArray[3] = string_to_split(F("boot device"),  boot_device(f));    
+    #elif defined(ESP32)
+        tempStrArray[0] = "\nBOOT\n";
+    #else
+    #endif        
 }
 
 void adri_toolsV2::ESP_core_info() {
@@ -467,48 +496,63 @@ void adri_toolsV2::ESP_core_info() {
     tempStrArraySize    = 7;
     tempStrArray        = new String[tempStrArraySize];
 
-    char chip_id[10];
-    fssprintf(chip_id," (0x%06x)",ESP.getChipId());
+    #if defined(ESP8266)
+        char chip_id[10];
+        fssprintf(chip_id," (0x%06x)",ESP.getChipId());
 
-    tempStrArray[0] = fsget(sys_sys);
-    tempStrArray[1] = string_to_split(fsget(sys_chip), ESP.getChipId()+String(chip_id));
-    tempStrArray[2] = string_to_split(fsget(sys_core), String(ESP.getCoreVersion())+"/"+ESP.getSdkVersion());
-    tempStrArray[3] = string_to_split(fsget(sys_boot), String(ESP.getBootVersion()));
-    tempStrArray[4] = string_to_split(fsget(sys_heap), String(ESP.getFreeHeap())+"bytes");
-    tempStrArray[5] = string_to_split(fsget(sys_cpu),  String(ESP.getCpuFreqMHz())+"MHz");
-    tempStrArray[6] = string_to_split(fsget(sys_vcc),  String(ESP.getVcc())+"mV") ;
+        tempStrArray[0] = fsget(sys_sys);
+        tempStrArray[1] = string_to_split(fsget(sys_chip), ESP.getChipId()+String(chip_id));
+        tempStrArray[2] = string_to_split(fsget(sys_core), String(ESP.getCoreVersion())+"/"+ESP.getSdkVersion());
+        tempStrArray[3] = string_to_split(fsget(sys_boot), String(ESP.getBootVersion()));
+        tempStrArray[4] = string_to_split(fsget(sys_heap), String(ESP.getFreeHeap())+"bytes");
+        tempStrArray[5] = string_to_split(fsget(sys_cpu),  String(ESP.getCpuFreqMHz())+"MHz");
+        tempStrArray[6] = string_to_split(fsget(sys_vcc),  String(ESP.getVcc())+"mV") ;
+    #elif defined(ESP32)
+        tempStrArray[0] = fsget(sys_sys);
+        tempStrArray[1] = string_to_split(fsget(sys_heap), String(ESP.getFreeHeap())+"bytes");
+        tempStrArray[2] = string_to_split(fsget(sys_cpu),  String(ESP.getCpuFreqMHz())+"MHz");        
+    #else
+    #endif        
+
 }
 void adri_toolsV2::ESP_shortFlash_info() {
     if (tempStrArray != nullptr) delete[] tempStrArray;
     tempStrArraySize    = 8;
     tempStrArray        = new String[tempStrArraySize];
 
-    tempStrArray[0] = "\nFLASH\n";
+    #if defined(ESP8266)
+        tempStrArray[0] = "\nFLASH\n";
 
-    FSInfo f;
-    LittleFS.info(f);
+        FSInfo f;
+        FILESYSTEM.info(f);
 
-    tempStrArray[1] = string_to_split(F("sketch size"),           String(ESP.getSketchSize())                         );
-    tempStrArray[2] = string_to_split(F("sketch freeSpace"),      String(ESP.getFreeSketchSpace())                    );
-    tempStrArray[3] = (ESP.getFlashChipRealSize()!=ESP.getFlashChipSize()) ? string_to_split(fsget(flash_conf), F("error")) : string_to_split(fsget(flash_conf), F("ok"));
-    tempStrArray[4] = string_to_split(F("SPIFFS"),    "____");
-    tempStrArray[5] = string_to_split(F("spiffs TotalBytes"),    String(f.totalBytes)                                );
-    tempStrArray[6] = string_to_split(F("spiffs UsedBytes"),     String(f.usedBytes)                                 );
-    tempStrArray[7] = string_to_split(F("spiffs FreeBytes"),     String(f.totalBytes-f.usedBytes)                    );
-
+        tempStrArray[1] = string_to_split(F("sketch size"),         String(ESP.getSketchSize())                         );
+        tempStrArray[2] = string_to_split(F("sketch freeSpace"),    String(ESP.getFreeSketchSpace())                    );
+        tempStrArray[3] = (ESP.getFlashChipRealSize()!=ESP.getFlashChipSize()) ? string_to_split(fsget(flash_conf), F("error")) : string_to_split(fsget(flash_conf), F("ok"));
+        tempStrArray[4] = string_to_split(F("SPIFFS"),    "____");
+        tempStrArray[5] = string_to_split(F("spiffs TotalBytes"),   String(f.totalBytes)                                );
+        tempStrArray[6] = string_to_split(F("spiffs UsedBytes"),    String(f.usedBytes)                                 );
+        tempStrArray[7] = string_to_split(F("spiffs FreeBytes"),    String(f.totalBytes-f.usedBytes)                    );
+    #elif defined(ESP32)
+        tempStrArray[0] = "\nFLASH\n";
+        tempStrArray[1] = string_to_split(F("sketch size"),         String(ESP.getSketchSize())                         );        
+    #else
+    #endif        
 }
+
 void adri_toolsV2::ESP_flash_info() {
     if (tempStrArray != nullptr) delete[] tempStrArray;
     tempStrArraySize    = 12;
     tempStrArray        = new String[tempStrArraySize];
 
+#if defined(ESP8266)
     tempStrArray[0] = "\nFLASH\n";
 
     char chip_id[20];
     fssprintf(chip_id," (0x%06x)", ESP.getFlashChipId());
 
     FSInfo f;
-    LittleFS.info(f);
+    FILESYSTEM.info(f);
 
     String io;
     switch (ESP.getFlashChipMode()) {
@@ -530,7 +574,23 @@ void adri_toolsV2::ESP_flash_info() {
     tempStrArray[9] = string_to_split(F("spiffs TotalBytes"),    String(f.totalBytes)                                );
     tempStrArray[10] = string_to_split(F("spiffs UsedBytes"),     String(f.usedBytes)                                 );
     tempStrArray[11] = string_to_split(F("spiffs FreeBytes"),     String(f.totalBytes-f.usedBytes)                    );
-
+#elif defined(ESP32)
+    tempStrArray[0] = "\nFLASH\n";
+    String io;
+    switch (ESP.getFlashChipMode()) {
+        case FM_QIO :   io="QIO";   break;
+        case FM_QOUT:   io="QOUT";  break;
+        case FM_DIO :   io="DIO";   break;
+        case FM_DOUT:   io="DOUT";  break;
+        default     :   io="UNKNOWN";
+    }
+    tempStrArray[1] = string_to_split(F("ide size"),              String(ESP.getFlashChipSize())                      );
+    tempStrArray[2] = string_to_split(F("ide speed"),             String(ESP.getFlashChipSpeed())                     );
+    tempStrArray[3] = string_to_split(F("ide mode"),              io                                                  );
+    tempStrArray[4] = string_to_split(F("sketch size"),           String(ESP.getSketchSize())                         );
+    tempStrArray[5] = string_to_split(F("sketch freeSpace"),      String(ESP.getFreeSketchSpace())                    );
+#else
+#endif        
 }
 // endregion >>>> ESP
 
